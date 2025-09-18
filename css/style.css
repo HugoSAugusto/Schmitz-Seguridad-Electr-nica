@@ -7,7 +7,9 @@
       --container: 1200px;
 }
 
-*{box-sizing:border-box}
+*{
+    box-sizing:border-box
+}
 
 html{
     scroll-behavior:smooth
@@ -121,12 +123,17 @@ header{
 
 /* Hero */
 .hero {
-    background-color: var(--black); 
-    background-image: url("../img/Logo-Schmitz-Seguridad-original.png");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: contain; 
+    position: relative;
+    overflow: hidden;
     color: var(--white);
+}
+
+.hero-bg {
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    object-fit: cover;
+    z-index: -1;
 }
     
 .hero .wrap{
@@ -134,7 +141,7 @@ header{
     grid-template-columns:1.2fr .8fr;
     gap:2rem;
     align-items:center;
-    padding:3.2rem 0
+    padding:3.2rem 2rem
 }
 
 .kicker{
@@ -210,13 +217,6 @@ section h2{
     grid-template-columns:repeat(2,1fr)
 }
 
-.card{
-    border:1px solid #e9e9e9;
-    border-radius:1rem;
-    padding:1rem;
-    background: var(--white);
-}
-
 .card h3{
     margin:.6rem 0 .3rem;
     font-size:1.05rem
@@ -225,6 +225,26 @@ section h2{
 .card p{
     margin:.2rem 0 .6rem;
     color: var(--dark);
+}
+
+.card {
+  position: relative;
+  background: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,.1);
+  overflow: hidden; /* evita que a imagem ultrapasse os limites do card */
+  text-align: center; /* opcional, pra centralizar o texto junto */
+}
+
+.card-bg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* centraliza exatamente no meio */
+  width: 100%;        /* tamanho da imagem */
+  opacity: 0.15;       /* efeito “marca d’água” */
+  pointer-events: none; /* não atrapalha clique no card */
 }
 
 .chip{
@@ -440,94 +460,46 @@ footer a{
 }
 
 /* Floating WhatsApp */
-.wa-float{
-    position:fixed;
-    right:16px;
-    bottom:16px;
-    z-index:60
+.wa-float {
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 1000;
 }
 
-.wa-float a{
-    display:inline-flex;
-    align-items:center;
-    gap:.6rem;
-    background:var(--red);
-    color: var(--muted);
-    padding:.8rem 1rem;
-    border-radius:999px;
-    box-shadow:0 8px 30px rgba(255,0,0,.35);
-    font-weight:700
+.wa-float a img {
+  width: 90px;   /* tamanho inicial */
+  height: 90px;  /* mantém proporção */
+  transition: transform 0.3s ease; /* suaviza a animação */
 }
+
+.wa-float a img:hover {
+  transform: scale(1.2); /* aumenta em 20% no hover */
+}
+
 
 /* Responsive */
-@media (max-width: 900px){
+@media (max-width: 768px) {
     .hero .wrap{
-        grid-template-columns:1fr
+        padding: 10%;
     }
-
-    .grid-3{
-        grid-template-columns:repeat(2,1fr)
-    }
-
-    footer .cols{
-        grid-template-columns:1fr 1fr
-    }
-}
-
-@media (max-width: 640px){
-    .menu-toggle {
-        display: block;
-    }
-
+   
     .nav-links {
+        display: none;
+        flex-direction: column;
+        background: var(--black);
         position: absolute;
         top: 80px;
         right: 0;
-        background: var(--black);
-        flex-direction: column;
-        width: 100%;
-        display: none;
+        width: 200px;
+        padding: 1rem;
     }
 
-    .nav-links.active {
+    .nav-links.show {
         display: flex;
     }
 
-    .nav-links li {
-        width: 100%;
-        text-align: center;
-        margin: 10px 0;
-    }
-
-    .menu-btn{
-        display:inline-flex;
-        align-items:center;
-        gap:.5rem;
-        background:transparent;
-        border:1px solid rgba(255,255,255,.2);
-        color: var(--muted);
-        padding:.45rem .7rem;
-        border-radius:.6rem
-    }
-
-    .grid-3,.grid-2{
-        grid-template-columns:1fr
-    }
-
-    /* carrusel */
-    .carousel {
-        height: 650px;
-    }
-
-    .carousel h2 {
-        font-size: 4em;
-    }
-    .carousel-item {
-        min-width: 75%; 
-        margin: 0 2.5%;
-    }
-
-    .carousel h2 {
-        font-size: 1.8em;
+    .menu-toggle {
+        display: block;
     }
 }

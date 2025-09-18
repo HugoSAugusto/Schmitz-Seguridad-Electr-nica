@@ -23,23 +23,25 @@
     <header>
         <nav class="navbar">
             <div class="container navbar-container">
-                <a href="../index.html" class="logo">Schmitz Seguridad Electrónica</a>
+                <a href="index.html" class="logo">Schmitz Seguridad Electrónica</a>
                 <div class="menu-toggle" id="menu-toggle">&#9776;</div>
                     <ul class="nav-links" id="nav-links">
-                    <li><a href="../index.html">Inicio</a></li>
-                    <li><a href="../index.html#services">Servicios</a></li>
-                    <li><a href="../index.html#blog">Blog</a></li>
-                    <li><a href="../index.html#contacto">Contacto</a></li>
+                    <li><a href="index.html#home">Inicio</a></li>
+                    <li><a href="index.html#services">Servicios</a></li>
+                    <li><a href="index.html#contacto">Contacto</a></li>
                 </ul>
             </div>
         </nav>
     </header>
         <section id="home" class="hero">
+            <video autoplay muted loop playsinline class="hero-bg">
+                <source src="img/assets/lgv.mp4" type="video/mp4">
+            </video>
             <div class="container wrap">
                 <div>
                     <div class="kicker">Paraguay • Seguridad profesional</div>
-                    <h2 class="title">Protegemos lo que más importa — <strong>Seguridad 360°</strong> para hogares, empresas y grandes proyectos.</h2>
-                    <p>Soluciones completas: cámaras HD, monitoreo humano 24/7, conectividad para hoteles (Starlink + SI Net), seguridad para grandes fazendas y mucho más.</p>
+                        <h2 class="title">Protegemos lo que más importa — <strong>Seguridad 360°</strong> para hogares, empresas y grandes proyectos.</h2>
+                        <p>Soluciones completas: cámaras HD, monitoreo humano 24/7, conectividad para hoteles (Starlink + SI Net), seguridad para grandes fazendas y mucho más.</p>
                     <div class="badges">
                         <span class="badge">Transparencia</span>
                         <span class="badge">Respuesta 24/7</span>
@@ -120,45 +122,51 @@
     <button class="next">⟩</button>
     </section>
 
-        <!-- Servicios -->
-        <section id="servicios" class="container">
-            <h2>Servicios</h2>
-            <p class="lead">Cada servicio incluye visita técnica, diseño de solución, instalación y capacitación básica. Seleccione para saber más.</p>
+    <!-- Servicios -->
+    <section id="servicios" class="container">
+        <h2>Servicios</h2>
+        <p class="lead">Cada servicio incluye visita técnica, diseño de solución, instalación y capacitación básica. Seleccione para saber más.</p>
 
-            <div class="grid grid-3" style="margin-top:1rem">
-                <article class="card" id="srv-camaras">
+        <div class="grid grid-3" style="margin-top:1rem">
+            <article class="card" id="srv-camaras">
                 <h3>📷 Cámaras de Seguridad HD</h3>
-                <p>Implementación de sistemas IP/HD, grabación segura, acceso remoto y analíticas básicas.</p>
+                <p>Implementación de sistemas IP/HD, grabación segura, acceso remoto y analíticas   básicas.</p>
+                <img src="img/assets/cam24.jpeg" alt="" class="card-bg">
                 <a class="more" href="#contacto" data-slug="/camaras-de-seguridad-paraguay">Solicitar propuesta →</a>
             </article>
 
             <article class="card" id="srv-monitoreo">
                 <h3>🛰️ Monitoreo en vivo 24/7</h3>
                 <p>Central humana 24/7 con protocolos de respuesta y reportes.</p>
+                <img src="img/assets/cam24.jpeg" alt="" class="card-bg">
                 <a class="more" href="#contacto" data-slug="/monitoreo-humano-24-7-paraguay">Hablar con especialista →</a>
             </article>
 
             <article class="card" id="srv-hoteles">
                 <h3>🏨 Seguridad para Hoteles (Starlink + SI Net)</h3>
                 <p>Conectividad estable, cámaras, control de acceso y cobertura Wi‑Fi para huéspedes.</p>
+                <img src="img/assets/cam24.jpeg" alt="" class="card-bg">
                 <a class="more" href="#contacto" data-slug="/seguridad-para-hoteles-paraguay">Quiero cotizar →</a>
             </article>
 
             <article class="card" id="srv-fazendas">
                 <h3>🚜 Seguridad en Grandes Fazendas</h3>
                 <p>Sensores perimetrales, replicadores de señal, radioenlaces y monitoreo remoto.</p>
+                <img src="img/assets/cam24.jpeg" alt="" class="card-bg">
                 <a class="more" href="#contacto" data-slug="/seguridad-para-fazendas-paraguay">Solicitar visita técnica →</a>
             </article>
 
             <article class="card" id="srv-alarmas">
                 <h3>🔔 Sistemas de Alarma y Control de Acceso</h3>
                 <p>Alarmas inteligentes, tags y biometría, integración con cámaras.</p>
+                <img src="img/assets/cam24.jpeg" alt="" class="card-bg">
                 <a class="more" href="#contacto" data-slug="/sistemas-de-alarma-control-de-acceso">Pedir presupuesto →</a>
             </article>
       
             <article class="card" id="srv-redes">
                 <h3>🌐 Redes de Seguridad y Conectividad</h3>
                 <p>Switching/PoE, cableado estructurado, enlaces punto a punto y Wi‑Fi pro.</p>
+                <img src="img/assets/cam24.jpeg" alt="" class="card-bg">
                 <a class="more" href="#contacto" data-slug="/redes-de-seguridad-conectividad">Consultar ahora →</a>
             </article>
         </div>
@@ -238,36 +246,7 @@
         </div>
     </section>
 
-    <!-- Blog -->
-    <section id="blog" class="container">
-        <h2>Blog</h2>
-        <div class="grid grid-2" style="margin-top:1rem">
-            <article class="post">
-                <h3>Cómo elegir el mejor sistema de cámaras para su empresa en Paraguay</h3>
-                <p>Comparación entre cámaras IP, analógicas HD, almacenamiento local vs. NVR, y consideraciones de red.</p>
-                <a class="more" href="articulo/camaras-empresa-paraguay.html" onclick="openPost('camaras-empresa-paraguay')">Leer artículo →</a>
-            </article>
-      
-            <article class="post">
-                <h3>5 ventajas de tener monitoreo humano 24/7</h3>
-                <p>Tiempo de respuesta, reducción de pérdidas, evidencias y coordinación con seguridad local.</p>
-                <a class="more" href="articulo/ventajas-monitoreo-24-7.html" onclick="openPost('ventajas-monitoreo-24-7')">Leer artículo →</a>
-            </article>
-      
-            <article class="post">
-                <h3>Internet satelital para hoteles: Starlink y SI Net en Paraguay</h3>
-                <p>Disponibilidad, latencia, planes y redundancia para huéspedes exigentes.</p>
-                <a class="more" href="articulo/starlink-si-net-hoteles-paraguay.html" onclick="openPost('starlink-si-net-hoteles-paraguay')">Leer artículo →</a>
-            </article>
-      
-            <article class="post">
-                <h3>Seguridad avanzada para grandes fazendas: lo que necesita saber</h3>
-                <p>Sensores perimetrales, radioenlaces, replicadores y monitoreo remoto.</p>
-                <a class="more" href="articulo/seguridad-avanzada-fazendas.html" onclick="openPost('seguridad-avanzada-fazendas')">Leer artículo →</a>
-            </article>
-        </div>
-    </section>
-
+    
     <!-- Contacto -->
     <section id="contacto" class="container">
         <h2>Contacto</h2>
@@ -299,8 +278,16 @@
         
                 <div class="card" style="margin-top:1rem">
                     <h3>Redes Sociales</h3>
-                    <p><a href="https://www.facebook.com/schmitzseguridadeletronica/" target="_blank" rel="noopener">Facebook</a> ·
-                    <a href="https://www.instagram.com/schmitzseguridad/" target="_blank" rel="noopener">Instagram</a></p>
+                    <p><a href="https://www.facebook.com/schmitzseguridadeletronica/" target="_blank" rel="noopener">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+                            <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"/>
+                        </svg>
+                    </a>
+                    <a href="https://www.instagram.com/schmitzseguridad/" target="_blank" rel="noopener">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+                            <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"/>
+                        </svg>
+                    </a></p>
                 </div>
             </div>
         </div>
@@ -326,12 +313,7 @@
                     </ul>
                 </div>
                 <div>
-                    <strong>Legal</strong>
-                    <ul style="list-style:none;padding:0;margin:.4rem 0;color:#ddd">
-                        <li><a href="#" onclick="openPolicy('privacy')">Política de Privacidad</a></li>
-                        <li><a href="#" onclick="openPolicy('terms')">Términos de Uso</a></li>
-                    </ul>
-                </div>
+
             </div>
       
             <div class="legal">Todos los derechos reservados © 2025 Schmitz Seguridad Electrónica</div>
@@ -340,8 +322,8 @@
 
     <!-- Botón flotante WhatsApp -->
     <div class="wa-float">
-        <a href="https://wa.me/595981329999?text=Hola%2C%20estoy%20te%20llamando%20atraves%20de%20tu%20sitio%20web" target="_blank" rel="noopener" aria-label="WhatsApp">
-      ☎ WhatsApp
+        <a href="https://wa.me/595981329999?text=Hola%2C%20estoy%20te%20llamando%20atraves%20de%20tu%20sitio%20web" target="_blank">
+            <img src="img/assets/whatsapp.svg" alt="WhatsApp">
         </a>
     </div>
 
@@ -356,8 +338,16 @@
         </article>
     </dialog>
 
+    <script>
+        // navbar
+        const menuToggle = document.getElementById('menu-toggle');
+        const navLinks = document.getElementById('nav-links');
+
+        menuToggle.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+    </script>
     <script src="js/script.js"></script>
-    <script src="js/nav.js"></script>
     <script src="js/main.js"></script>
     <script src="js/carrusel.js"></script>
 </body>
