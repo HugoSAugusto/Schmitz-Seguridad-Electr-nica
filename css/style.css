@@ -784,7 +784,7 @@ footer .btn:focus {
     transform: scale(1.2);
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1300px) {
     /* .navbar {
         padding: 1%;
         height: 10rem;
@@ -920,7 +920,7 @@ footer .btn:focus {
     }
 
     footer {
-        font-size: 1.2rem;
+        font-size: 1.8rem;
         background: var(--dark);
         color: var(--white);
         padding: 0;        
