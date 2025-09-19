@@ -785,11 +785,16 @@ footer .btn:focus {
 }
 
 @media (max-width: 1300px) {
-    /* .navbar {
+    .navbar {
+        font-size: 1rem;
         padding: 1%;
         height: 10rem;
     }
-    .nav-links {
+
+    .menu-toggle li{
+        font-size: 2rem;
+    }
+    /* .nav-links {
         display: flex;
         flex-direction: column;
         position: fixed;
