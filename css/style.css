@@ -784,18 +784,10 @@ footer .btn:focus {
 .wa-float a img:hover {
     transform: scale(1.2);
 }
-@media (max-width: 800px) {
+@media (max-width: 1200px) {
     .navbar {
         height: 10rem;
     }
-
-    .navbar .logo {
-        color: var(--muted);
-        font-size: 2rem;
-        font-weight: 700px;
-        text-decoration: none;
-    }
-
     .nav-links {
         display: flex;
         flex-direction: column;
