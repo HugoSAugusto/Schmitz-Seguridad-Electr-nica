@@ -33,37 +33,16 @@
             </div>
         </nav>
     </header>
-        <section id="home" class="hero">
-            <video autoplay muted loop playsinline class="hero-bg">
-                <source src="img/assets/lgv.mp4" type="video/mp4">
-            </video>
-            <div class="container wrap">
-                <div>
-                    <div class="kicker">Paraguay • Seguridad profesional</div>
-                        <h2 class="title">Protegemos lo que más importa — <strong>Seguridad 360°</strong> para hogares, empresas y grandes proyectos.</h2>
-                        <p>Soluciones completas: cámaras HD, monitoreo humano 24/7, conectividad para hoteles (Starlink + SI Net), seguridad para grandes fazendas y mucho más.</p>
-                    <div class="badges">
-                        <span class="badge">Transparencia</span>
-                        <span class="badge">Respuesta 24/7</span>
-                        <span class="badge">Instalación certificada</span>
-                    </div>
-                    <div style="display:flex;gap:.6rem;flex-wrap:wrap">
-                        <a class="btn" href="https://wa.me/595981329999?text=Hola%2C%20estoy%20te%20llamando%20atraves%20de%20tu%20sitio%20web" target="_blank" rel="noopener">Solicite un presupuesto</a>
-                        <a class="btn secondary" href="#servicios">Ver servicios</a>
-                    </div>
-                </div>
-                <div class="hero-card">
-                    <h3 style="margin:0 0 .5rem">Cobertura y especialidades</h3>
-                    <ul style="margin:0;padding-left:1.1rem;color:#bbb">
-                        <li>Cámaras de seguridad HD (IP / analógicas)</li>
-                        <li>Monitoreo en vivo 24/7 con equipo humano</li>
-                        <li>Redes y conectividad profesional</li>
-                        <li>Hoteles: Starlink + SI Net</li>
-                        <li>Grandes fazendas: sensores, replicadores, control</li>
-                    </ul>
-                </div>
-            </div>
-        </section>
+    <section id="home" class="hero">
+        <video autoplay muted loop playsinline class="hero-bg">
+            <source src="img/assets/lgv.mp4" type="video/mp4">
+        </video>
+        <div class="hero-content">
+            <h1 class="typewriter-line line1">Schmitz</h1>
+            <h1 class="typewriter-line line2">Seguridad Electrónica</h1>
+            <p class="slogan">Protección • Confianza • Innovación</p>
+        </div>
+    </section>
 
         <!-- Carrusel -->
     <section class="carousel" class="container">
@@ -123,52 +102,72 @@
     </section>
 
     <!-- Servicios -->
-    <section id="servicios" class="container">
-        <h2>Servicios</h2>
-        <p class="lead">Cada servicio incluye visita técnica, diseño de solución, instalación y capacitación básica. Seleccione para saber más.</p>
-
-        <div class="grid grid-3" style="margin-top:1rem">
-            <article class="card" id="srv-camaras">
-                <h3>📷 Cámaras de Seguridad HD</h3>
-                <p>Implementación de sistemas IP/HD, grabación segura, acceso remoto y analíticas   básicas.</p>
-                <img src="img/assets/cam24.jpeg" alt="" class="card-bg">
-                <a class="more" href="#contacto" data-slug="/camaras-de-seguridad-paraguay">Solicitar propuesta →</a>
-            </article>
-
-            <article class="card" id="srv-monitoreo">
-                <h3>🛰️ Monitoreo en vivo 24/7</h3>
-                <p>Central humana 24/7 con protocolos de respuesta y reportes.</p>
-                <img src="img/assets/cam24.jpeg" alt="" class="card-bg">
-                <a class="more" href="#contacto" data-slug="/monitoreo-humano-24-7-paraguay">Hablar con especialista →</a>
-            </article>
-
-            <article class="card" id="srv-hoteles">
-                <h3>🏨 Seguridad para Hoteles (Starlink + SI Net)</h3>
-                <p>Conectividad estable, cámaras, control de acceso y cobertura Wi‑Fi para huéspedes.</p>
-                <img src="img/assets/cam24.jpeg" alt="" class="card-bg">
-                <a class="more" href="#contacto" data-slug="/seguridad-para-hoteles-paraguay">Quiero cotizar →</a>
-            </article>
-
-            <article class="card" id="srv-fazendas">
-                <h3>🚜 Seguridad en Grandes Fazendas</h3>
-                <p>Sensores perimetrales, replicadores de señal, radioenlaces y monitoreo remoto.</p>
-                <img src="img/assets/cam24.jpeg" alt="" class="card-bg">
-                <a class="more" href="#contacto" data-slug="/seguridad-para-fazendas-paraguay">Solicitar visita técnica →</a>
-            </article>
-
-            <article class="card" id="srv-alarmas">
-                <h3>🔔 Sistemas de Alarma y Control de Acceso</h3>
-                <p>Alarmas inteligentes, tags y biometría, integración con cámaras.</p>
-                <img src="img/assets/cam24.jpeg" alt="" class="card-bg">
-                <a class="more" href="#contacto" data-slug="/sistemas-de-alarma-control-de-acceso">Pedir presupuesto →</a>
-            </article>
-      
-            <article class="card" id="srv-redes">
-                <h3>🌐 Redes de Seguridad y Conectividad</h3>
-                <p>Switching/PoE, cableado estructurado, enlaces punto a punto y Wi‑Fi pro.</p>
-                <img src="img/assets/cam24.jpeg" alt="" class="card-bg">
-                <a class="more" href="#contacto" data-slug="/redes-de-seguridad-conectividad">Consultar ahora →</a>
-            </article>
+    <section id="servicios-section" class="services-section">
+        <div id="openModal" class="central-btn">
+            <h2>Conozca nuestros servicios</h2>
+        </div>
+        <div class="modal" id="servicesModal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <section id="servicios" class="container">
+                    <h2>Servicios</h2>
+                     <div>
+                        <h2 class="title">Protegemos lo que más importa — <strong>Seguridad 360°</strong> para hogares, empresas y grandes proyectos.</h2>
+                        <p>Soluciones completas: cámaras HD, monitoreo humano 24/7, conectividad para hoteles (Starlink + SI Net), seguridad para grandes fazendas y mucho más.</p>
+                     </div>
+                    <div class="grid grid-3" style="margin-top:1rem">
+                        <article class="card">
+                            <div class="card-text">
+                                <h3>📷 Cámaras de Seguridad HD</h3>
+                            </div>
+                            <div class="card-img">
+                                <img src="img/assets/cam1.jpeg" alt="monitoramento" class="card-bg">
+                            </div>
+                        </article>
+                        <article class="card">
+                            <div class="card-text">
+                                <h3>🛰️ Monitoreo en vivo 24/7</h3>
+                            </div>
+                            <div class="card-img">
+                                <img src="img/assets/cam24.jpeg" alt="" class="card-bg">
+                            </div>
+                        </article>
+                        <article class="card">
+                            <div class="card-text">
+                                <h3>🏨 Seguridad para Hoteles (Starlink + SI Net)</h3>
+                            </div>
+                            <div class="card-img">
+                                <img src="img/assets/blk.jpeg" alt="" class="card-bg">
+                            </div>
+                        </article>
+                        <article class="card">
+                            <div class="card-text">
+                                <h3>🚜 Seguridad en Grandes Fazendas</h3>
+                            </div>
+                            <div class="card-img">
+                                <img src="img/assets/ctv.jpeg" alt="" class="card-bg">
+                            </div>
+                        </article>
+                        <article class="card">
+                            <div class="card-text">
+                                <h3>🔔 Sistemas de Alarma y Control de Acceso</h3>
+                            </div>
+                            <div class="card-img">
+                                <img src="img/assets/alrt.jpeg" alt="" class="card-bg">
+                            </div>
+                        </article>
+        
+                        <article class="card" id="srv-redes">
+                            <div class="card-text">
+                                <h3>🌐 Redes de Seguridad y Conectividad</h3>
+                            </div>
+                            <div class="card-img">
+                                <img src="img/assets/web.jpeg" alt="" class="card-bg">
+                            </div>
+                        </article>
+                    </div>
+                </section>
+            </div>
         </div>
     </section>
 
@@ -203,13 +202,13 @@
         <div class="container">
             <h2>Clientes y Testimonios</h2>
             <div class="grid grid-3" style="margin-top:1rem">
-                <div class="quote">
+                <div class="card">
                     <p>“Instalación impecable y soporte rápido. Ahora tenemos visibilidad total del hotel.” — <strong>Gerente de Hotel</strong></p>
                 </div>
-                <div class="quote">
+                <div class="card">
                     <p>“El monitoreo humano 24/7 nos dio tranquilidad operativa.” — <strong>Administrador Industrial</strong></p>
                 </div>
-                <div class="quote">
+                <div class="card">
                     <p>“Cobertura de red en toda la fazenda con replicadores, funcionó perfecto.” — <strong>Productor Rural</strong></p>
                 </div>
             </div>
@@ -223,11 +222,15 @@
             <article class="unit">
                 <iframe loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps?q=Nueva%20Esperanza%20Paraguay&output=embed"></iframe>
                 <div class="meta">
-                    <h3>📍 Unidad 1 – Nueva Esperanza</h3>
-                    <p>Atención regional. <a href="tel:+595981329999">+595 981 329999</a></p>
-                    <div style="display:flex;gap:.5rem;flex-wrap:wrap">
-                        <a class="btn" href="https://wa.me/595981329999?text=Hola%2C%20estoy%20te%20llamando%20atraves%20de%20tu%20sitio%20web" target="_blank" rel="noopener">WhatsApp</a>
-                        <a class="btn secondary" href="https://maps.google.com/?q=Nueva%20Esperanza%20Paraguay" target="_blank" rel="noopener">Abrir en Google Maps</a>
+                    <a href="https://maps.google.com/?q=Nueva%20Esperanza%20Paraguay" target="_blank" rel="noopener">
+                        <h3>Casa Matriz Nueva Esperanza</h3>
+                    </a>
+                    <p>Atención regional.</p>
+                    <div class="contact">
+                        <a href="tel:+595981329999">+595 981 329999</a>
+                        <a href="https://wa.me/595981329999" target="_blank" rel="noopener">
+                            <img src="img/assets/whatsapp.png" alt="WhatsApp">
+                        </a>
                     </div>
                 </div>
             </article>
@@ -235,108 +238,107 @@
             <article class="unit">
                 <iframe loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps?q=Ciudad%20del%20Este%20KM4&output=embed"></iframe>
                 <div class="meta">
-                    <h3>📍 Unidad 2 – Ciudad del Este KM4</h3>
-                    <p>Teléfonos: <a href="tel:+595983924185">+595 983 924185</a> · <a href="tel:+595981329999">+595 981 329999</a></p>
-                    <div style="display:flex;gap:.5rem;flex-wrap:wrap">
-                        <a class="btn" href="https://wa.me/595981329999?text=Hola%2C%20estoy%20te%20llamando%20atraves%20de%20tu%20sitio%20web" target="_blank" rel="noopener">WhatsApp</a>
-                        <a class="btn secondary" href="https://maps.google.com/?q=Ciudad%20del%20Este%20KM4" target="_blank" rel="noopener">Abrir en Google Maps</a>
+                    <a href="https://maps.google.com/?q=Ciudad%20del%20Este%20KM4" target="_blank" rel="noopener">
+                        <h3>Sucursal Ciudad Del Est KM4</h3>
+                    </a>
+                    <p>Atención regional.</p>
+                    <div class="contact">
+                        <a href="tel:+595981329999">+595 981 329999</a>
+                        <a href="https://wa.me/595981329999" target="_blank" rel="noopener">
+                            <img src="img/assets/whatsapp.png" alt="WhatsApp">
+                        </a>
+
+                        <a href="tel:+595983924185">+595 983 924185</a>
+                        <a href="https://wa.me/595983924185" target="_blank" rel="noopener">
+                            <img src="img/assets/whatsapp.png" alt="WhatsApp">
+                        </a>
                     </div>
                 </div>
             </article>
         </div>
     </section>
 
-    
-    <!-- Contacto -->
-    <section id="contacto" class="container">
-        <h2>Contacto</h2>
-        <p class="lead">Escríbanos y un especialista responderá en breve. También puede llamarnos o escribir por WhatsApp.</p>
-        <div class="grid grid-2" style="margin-top:1rem;align-items:start">
-            <form id="contactForm" action="https://formsubmit.co/YOUR_EMAIL" method="POST">
-                <input type="hidden" name="_subject" value="Nuevo contacto desde el sitio" />
-                <input type="hidden" name="_captcha" value="false" />
-                <label>
-                    <span>Nombre</span>
-                    <input name="name" required placeholder="Su nombre" />
-                </label>
-                <label>
-                    <span>E‑mail</span>
-                    <input type="email" name="email" required placeholder="su@email.com" />
-                </label>
-                <label>
-                    <span>Mensaje</span>
-                    <textarea name="message" required placeholder="Cuéntenos sobre su proyecto"></textarea>
-                </label>
-                <button class="btn" type="submit">Enviar mensaje</button>
-            </form>
-            <div>
-                <div class="card">
-                    <h3>Teléfonos y WhatsApp</h3>
-                    <p><a href="tel:+595983924185">+595 983 924185</a> · <a href="tel:+595981329999">+595 981 329999</a></p>
-                    <a class="btn" href="https://wa.me/595981329999?text=Hola%2C%20estoy%20te%20llamando%20atraves%20de%20tu%20sitio%20web" target="_blank" rel="noopener">Hablar por WhatsApp</a>
-                </div>
-        
-                <div class="card" style="margin-top:1rem">
-                    <h3>Redes Sociales</h3>
-                    <p><a href="https://www.facebook.com/schmitzseguridadeletronica/" target="_blank" rel="noopener">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
-                            <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"/>
-                        </svg>
-                    </a>
-                    <a href="https://www.instagram.com/schmitzseguridad/" target="_blank" rel="noopener">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
-                            <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"/>
-                        </svg>
-                    </a></p>
-                </div>
-            </div>
+    <!-- FAQ / Dúvidas Frequentes -->
+    <!-- FAQ / Preguntas Frecuentes -->
+    <section id="faq" class="container">
+    <h2>Preguntas Frecuentes</h2>
+        <div class="grid grid-1" style="margin-top:1rem; gap:1rem;">
+            <article class="faq-card">
+                <h3>¿Cuál es el horario de atención?</h3>
+                <p>Nuestro equipo atiende de lunes a viernes, de 8:00 a 18:00.</p>
+            </article>
+
+            <article class="faq-card">
+                <h3>¿Ofrecen soporte 24 horas?</h3>
+                <p>Sí, contamos con monitoreo continuo y atención remota.</p>
+            </article>
+
+            <article class="faq-card">
+                <h3>¿Qué tipos de sistemas de seguridad instalan?</h3>
+                <p>Cámaras, alarmas, control de acceso y soluciones personalizadas.</p>
+            </article>
+
+            <article class="faq-card">
+                <h3>¿Realizan instalaciones en todo el país?</h3>
+                <p>Sí, tenemos cobertura nacional con equipo propio.</p>
+            </article>
+
+            <article class="faq-card">
+                <h3>¿Cómo puedo ponerme en contacto?</h3>
+                <p>Por teléfono o WhatsApp, según la información del sitio web.</p>
+            </article>
         </div>
     </section>
 
-    <!-- Footer -->
+
     <footer>
-        <div class="container" style="padding:2rem 0">
-            <div class="cols">
-                <div>
-                    <strong>Schmitz Seguridad Electrónica</strong>
-                    <p style="margin:.4rem 0;color:#aaa">Seguridad 360° en Paraguay: cámaras, monitoreo 24/7, hoteles (Starlink + SI Net), grandes fazendas, alarmas y redes.</p>
-                </div>
-                
-                <div>
-                    <strong>Enlaces</strong>
-                    <ul style="list-style:none;padding:0;margin:.4rem 0;color:#ddd">
-                        <li><a href="#sobre">Sobre Nosotros</a></li>
-                        <li><a href="#servicios">Servicios</a></li>
-                        <li><a href="#unidades">Unidades</a></li>
-                        <li><a href="#blog">Blog</a></li>
-                        <li><a href="#contacto">Contacto</a></li>
-                    </ul>
-                </div>
-                <div>
+  <div class="container footer-cols">
 
-            </div>
-      
-            <div class="legal">Todos los derechos reservados © 2025 Schmitz Seguridad Electrónica</div>
-        </div>
-    </footer>
+    <div class="footer-col">
+      <h3>Servicios</h3>
+      <p>Conoce nuestros servicios principales:</p>
+      <button class="btn" onclick="openServicesModal()">Ver Servicios</button>
+    </div>
+    
+    <div class="footer-col">
+      <h3>Síguenos</h3>
+      <p>Conéctate con nosotros en nuestras redes sociales:</p>
+      <div class="social-links">
+        <a href="https://www.facebook.com/schmitzseguridadeletronica/" target="_blank" rel="noopener" aria-label="Facebook">
+          <img src="img/assets/facebook.png" alt="Facebook">
+        </a>
+        <a href="https://www.instagram.com/schmitzseguridad/" target="_blank" rel="noopener" aria-label="Instagram">
+          <img src="img/assets/instagram.png" alt="Instagram">
+        </a>
+        <a href="https://wa.me/595981329999" target="_blank" rel="noopener" aria-label="WhatsApp">
+          <img src="img/assets/whatsapp.svg" alt="WhatsApp">
+        </a>
+      </div>
+    </div>
 
-    <!-- Botón flotante WhatsApp -->
+    <div class="footer-col">
+      <h3>Contáctanos</h3>
+      <p>📍 Casa Matriz Nueva Esperanza</p>
+      <p>+595 981 329999</p>
+      <p>📍 Sucursal Ciudad del Este KM4</p>
+      <p>+595 983 924185</p>
+    </div>
+  </div>
+
+  <div class="legal">
+    <p>&copy; 2025 Schmitz Seguridad Electrónica. Todos los derechos reservados.</p>
+  </div>
+</footer>
+
+
+<!-- Botón flotante WhatsApp -->
     <div class="wa-float">
         <a href="https://wa.me/595981329999?text=Hola%2C%20estoy%20te%20llamando%20atraves%20de%20tu%20sitio%20web" target="_blank">
             <img src="img/assets/whatsapp.svg" alt="WhatsApp">
         </a>
     </div>
 
-    <!-- Modal básico para posts y políticas -->
-    <dialog id="modal" style="max-width:min(880px, 92vw);border:0;border-radius:1rem;box-shadow:0 10px 40px rgba(0,0,0,.35)">
-        <article style="padding:1rem">
-            <header style="display:flex;justify-content:space-between;align-items:center;border-bottom:1px solid #eee;padding-bottom:.5rem;margin-bottom:1rem">
-                <h3 id="modalTitle" style="margin:0"></h3>
-                <button class="btn secondary" onclick="closeModal()">Cerrar</button>
-            </header>
-            <div id="modalBody" style="color:#444"></div>
-        </article>
-    </dialog>
+ 
 
     <script>
         // navbar
@@ -346,7 +348,34 @@
         menuToggle.addEventListener('click', () => {
             navLinks.classList.toggle('active');
         });
+
+        const modal = document.getElementById("servicesModal");
+        const openModal = document.getElementById("openModal");
+        const closeModal = document.querySelector(".close");
+
+        openModal.onclick = () => modal.style.display = "flex";
+        closeModal.onclick = () => modal.style.display = "none";
+        window.onclick = e => { 
+            if (e.target === modal) modal.style.display = "none";
+         }
+
+         function openServicesModal() {
+            document.getElementById('servicesModal').style.display = 'flex';
+        }
+
+        function closeServicesModal() {
+            document.getElementById('servicesModal').style.display = 'none';
+        }
+
+        window.onclick = function(event) {
+            if (event.target == document.getElementById('servicesModal')) {
+            closeServicesModal();
+            }
+        }
+
     </script>
+
+    
     <script src="js/script.js"></script>
     <script src="js/main.js"></script>
     <script src="js/carrusel.js"></script>
