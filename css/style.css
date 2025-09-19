@@ -453,12 +453,12 @@ button:hover {
 }
 
 /* Grid de servicios */
-.identidades-seguridad {
+#identidades-seguridad {
     background-color: var(--red-dark);
     color: var(--white);
 }
 
-.identidades-seguridad h2 {
+#identidades-seguridad h2 {
     text-align: center;
     font-size: clamp(1.8rem, 3vw, 2.5rem);
     color: var(--white);
@@ -468,7 +468,7 @@ button:hover {
     width: 100%;
 }
 
-.identidades-seguridad h2::after {
+#identidades-seguridad h2::after {
     content: '';
     display: block;
     width: 50px;                 /* comprimento da linha */
@@ -478,7 +478,7 @@ button:hover {
     border-radius: 2px;
 }
 
-.identidades-seguridad .inner {
+#identidades-seguridad .inner {
     display: flex;
     justify-content: center;  /* centraliza horizontalmente */
     align-items: flex-start;  /* alinha pelo topo */
@@ -493,8 +493,8 @@ button:hover {
 .identidad {
     display: flex;
     flex-direction: column;
-    align-items: center;  /* centraliza elementos da coluna */
-    text-align: center;   /* centraliza o texto */
+    align-items: center;
+    text-align: center;
     min-width: 150px;
     margin: 2rem;
 }
@@ -506,7 +506,7 @@ button:hover {
 }
 
 .identidad h3 {
-    color: var(--white);  /* título branco */
+    color: var(--white); 
     font-weight: 600;
 }
 
@@ -607,10 +607,9 @@ button:hover {
 
 
 
-.meta .contact a img {
-    background: transparent;   /* remove fundo */
-    display: block;            /* remove gaps de inline-block */
-    width: 40px;               /* ajusta tamanho se necessário */
+.meta .contact a img { 
+    display: block;
+    width: 40px;
     height: 40px;
 }
 
@@ -624,7 +623,7 @@ button:hover {
 }
 
 #faq h2 {
-    font-size: clamp(1.8rem, 3vw, 2.5rem);
+    font-size: 2.5rem;
     color: var(--red);
     position: relative;
     display: inline-block;
@@ -826,14 +825,17 @@ footer .btn:focus {
         display: block;
     }
 
-    .identidades-seguridad .inner {
+    #identidades-seguridad .inner {
         flex-direction: column;   
         align-items: center;
     }
 
-    .identidades-seguridad .identidad {
-        margin-bottom: 2rem;    
+    #identidades-seguridad .identidad {
+        margin-bottom: 2rem;
+        font-size: 2rem;
     }
+
+    
 
     #sobre .grid {
         display: flex;
@@ -867,7 +869,7 @@ footer .btn:focus {
         padding: 10%;
         flex: 600px;
         width: 350px;
-        height: 750px;
+        height: 450px;
        
         margin: 0 auto
     }
