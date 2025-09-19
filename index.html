@@ -26,9 +26,10 @@
                 <a href="index.html" class="logo">Schmitz Seguridad Electrónica</a>
                 <div class="menu-toggle" id="menu-toggle">&#9776;</div>
                     <ul class="nav-links" id="nav-links">
-                    <li><a href="index.html#home">Inicio</a></li>
-                    <li><a href="index.html#services">Servicios</a></li>
-                    <li><a href="index.html#contacto">Contacto</a></li>
+                    <li><a href="#home">Inicio</a></li>
+                    <li><a href="#servicios-section">Servicios</a></li>
+                    <li><a href="#unidades">Unidades</a></li>
+                    <li><a href="#faq">Preguntas Frecuentes</a></li>
                 </ul>
             </div>
         </nav>
@@ -197,6 +198,26 @@
         </div>
     </section>
 
+
+    <section class="identidades-seguridad">
+        <h2>Nuestros Servicios</h2>
+        <div class="inner">
+            <div class="identidad">
+                <img src="img/assets/casa.png" alt="Seguridad Residencial">
+                <h3>Seguridad Residencial</h3>
+            </div>
+            <div class="identidad">
+                <img src="img/assets/booking.png" alt="Seguridad Comercial">
+                <h3>seguridad en sus manos</h3>
+            </div>
+            <div class="identidad">
+                <img src="img/assets/security.png" alt="Cámaras de Vigilancia">
+                <h3>Cámaras de Vigilancia</h3>
+            </div>
+        </div>
+    </section>
+
+
     <!-- Testimonios / Clientes -->
     <section class="testimonials">
         <div class="container">
@@ -258,7 +279,6 @@
         </div>
     </section>
 
-    <!-- FAQ / Dúvidas Frequentes -->
     <!-- FAQ / Preguntas Frecuentes -->
     <section id="faq" class="container">
     <h2>Preguntas Frecuentes</h2>
@@ -292,46 +312,43 @@
 
 
     <footer>
-  <div class="container footer-cols">
+        <div class="container footer-cols grid">
+            <div class="footer-col ">
+                <h3>Servicios</h3>
+                <p>Conoce nuestros servicios principales:</p>
+                <button class="btn" onclick="openServicesModal()">Ver Servicios</button>
+            </div>
+            <div class="footer-col">
+                <h3>Síguenos</h3>
+                <p>Conéctate con nosotros en nuestras redes sociales:</p>
+                    <div class="social-links">
+                    <a href="https://www.facebook.com/schmitzseguridadeletronica/" target="_blank" rel="noopener" aria-label="Facebook">
+                        <img src="img/assets/facebook.png" alt="Facebook">
+                    </a>
+                    <a href="https://www.instagram.com/schmitzseguridad/" target="_blank" rel="noopener" aria-label="Instagram">
+                        <img src="img/assets/instagram.png" alt="Instagram">
+                    </a>
+                    <a href="https://wa.me/595981329999" target="_blank" rel="noopener" aria-label="WhatsApp">
+                        <img src="img/assets/whatsapp.svg" alt="WhatsApp">
+                    </a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h3>Contáctanos</h3>
+                <p>📍 Casa Matriz Nueva Esperanza</p>
+                <p>+595 981 329999</p>
+                <p>📍 Sucursal Ciudad del Este KM4</p>
+                <p>+595 983 924185</p>
+            </div>
+        </div>
 
-    <div class="footer-col">
-      <h3>Servicios</h3>
-      <p>Conoce nuestros servicios principales:</p>
-      <button class="btn" onclick="openServicesModal()">Ver Servicios</button>
-    </div>
-    
-    <div class="footer-col">
-      <h3>Síguenos</h3>
-      <p>Conéctate con nosotros en nuestras redes sociales:</p>
-      <div class="social-links">
-        <a href="https://www.facebook.com/schmitzseguridadeletronica/" target="_blank" rel="noopener" aria-label="Facebook">
-          <img src="img/assets/facebook.png" alt="Facebook">
-        </a>
-        <a href="https://www.instagram.com/schmitzseguridad/" target="_blank" rel="noopener" aria-label="Instagram">
-          <img src="img/assets/instagram.png" alt="Instagram">
-        </a>
-        <a href="https://wa.me/595981329999" target="_blank" rel="noopener" aria-label="WhatsApp">
-          <img src="img/assets/whatsapp.svg" alt="WhatsApp">
-        </a>
-      </div>
-    </div>
-
-    <div class="footer-col">
-      <h3>Contáctanos</h3>
-      <p>📍 Casa Matriz Nueva Esperanza</p>
-      <p>+595 981 329999</p>
-      <p>📍 Sucursal Ciudad del Este KM4</p>
-      <p>+595 983 924185</p>
-    </div>
-  </div>
-
-  <div class="legal">
-    <p>&copy; 2025 Schmitz Seguridad Electrónica. Todos los derechos reservados.</p>
-  </div>
-</footer>
+        <div class="legal">
+            <p>&copy; 2025 Schmitz Seguridad Electrónica. Todos los derechos reservados.</p>
+        </div>
+    </footer>
 
 
-<!-- Botón flotante WhatsApp -->
+    <!-- Botón flotante WhatsApp -->
     <div class="wa-float">
         <a href="https://wa.me/595981329999?text=Hola%2C%20estoy%20te%20llamando%20atraves%20de%20tu%20sitio%20web" target="_blank">
             <img src="img/assets/whatsapp.svg" alt="WhatsApp">
@@ -345,8 +362,16 @@
         const menuToggle = document.getElementById('menu-toggle');
         const navLinks = document.getElementById('nav-links');
 
+        // abrir/fechar menu
         menuToggle.addEventListener('click', () => {
-            navLinks.classList.toggle('active');
+            navLinks.classList.toggle('show');
+        });
+        
+        // fechar menu ao clicar em qualquer link
+        document.querySelectorAll('#nav-links a').forEach(link => {
+            link.addEventListener('click', () => {
+                navLinks.classList.remove('show');
+            });
         });
 
         const modal = document.getElementById("servicesModal");
@@ -375,7 +400,7 @@
 
     </script>
 
-    
+
     <script src="js/script.js"></script>
     <script src="js/main.js"></script>
     <script src="js/carrusel.js"></script>
