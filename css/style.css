@@ -20,7 +20,8 @@ body{
     margin:0;
     font-family:'Poppins',system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,'Open Sans',sans-serif;
     background:#fff;
-    color:var(--dark)
+    color:var(--dark);
+    overflow-x: hidden;
 }
 
 a{
@@ -849,7 +850,7 @@ footer .btn:focus {
 
 
 /* Responsive */
-@media (max-width: 768px) {
+@media (max-width: 900px) {
     .hero .wrap{
         padding: 10%;
     }
