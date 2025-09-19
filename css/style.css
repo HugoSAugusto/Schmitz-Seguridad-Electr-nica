@@ -830,6 +830,10 @@ footer .btn:focus {
         display: block;
     } */
 
+    #identidades-seguridad h2 {
+        font-size: 5rem;
+    }
+
     #identidades-seguridad .inner {
         flex-direction: column;   
         align-items: center;
@@ -839,8 +843,6 @@ footer .btn:focus {
         margin-bottom: 2rem;
         font-size: 2rem;
     }
-
-    
 
     #sobre .grid {
         display: flex;
