@@ -219,18 +219,18 @@
 
 
     <!-- Testimonios / Clientes -->
-    <section class="testimonials">
+    <section id="testimonials">
         <div class="container">
             <h2>Clientes y Testimonios</h2>
             <div class="grid grid-3" style="margin-top:1rem">
                 <div class="card">
-                    <p>“Instalación impecable y soporte rápido. Ahora tenemos visibilidad total del hotel.” — <strong>Gerente de Hotel</strong></p>
+                    <p>“Instalación impecable y soporte rápido. Ahora tenemos visibilidad total del hotel.” <br>— <strong>Gerente de Hotel</strong></p>
                 </div>
                 <div class="card">
-                    <p>“El monitoreo humano 24/7 nos dio tranquilidad operativa.” — <strong>Administrador Industrial</strong></p>
+                    <p>“El monitoreo humano 24/7 nos dio tranquilidad operativa.” <br>— <strong>Administrador Industrial</strong></p>
                 </div>
                 <div class="card">
-                    <p>“Cobertura de red en toda la fazenda con replicadores, funcionó perfecto.” — <strong>Productor Rural</strong></p>
+                    <p>“Cobertura de red en toda la fazenda con replicadores, funcionó perfecto.”<br> — <strong>Productor Rural</strong></p>
                 </div>
             </div>
         </div>
@@ -312,7 +312,7 @@
 
 
     <footer>
-        <div class="container footer-cols grid">
+        <div class="footer-cols grid">
             <div class="footer-col ">
                 <h3>Servicios</h3>
                 <p>Conoce nuestros servicios principales:</p>
@@ -358,21 +358,17 @@
  
 
     <script>
-        // navbar
         const menuToggle = document.getElementById('menu-toggle');
         const navLinks = document.getElementById('nav-links');
 
-        // abrir/fechar menu
         menuToggle.addEventListener('click', () => {
             navLinks.classList.toggle('show');
         });
-        
-        // fechar menu ao clicar em qualquer link
-        document.querySelectorAll('#nav-links a').forEach(link => {
-            link.addEventListener('click', () => {
-                navLinks.classList.remove('show');
-            });
-        });
+
+        // Fecha menu ao clicar em um item
+        navLinks.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => navLinks.classList.remove('show'));
+        });;
 
         const modal = document.getElementById("servicesModal");
         const openModal = document.getElementById("openModal");
