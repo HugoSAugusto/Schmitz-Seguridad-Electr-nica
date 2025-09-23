@@ -434,12 +434,10 @@ button:hover {
     border-radius: 2px;
 }
 
-#sobre .lead {
+#sobre p {
     max-width: 700px;
     margin: 0 auto 2rem;
-    font-size: 1.5rem;
-    line-height: 1.6;
-    color: var(--dark);
+    font-size: 1.2rem;
 }
 
 #sobre .grid {
@@ -472,15 +470,6 @@ button:hover {
     width: 100%;
 }
 
-#identidades-seguridad h2::after {
-    display: block;
-    width: 50px;
-    height: 3px;
-    background: var(--white);
-    margin: 0.5rem auto 0;
-    border-radius: 2px;
-}
-
 #identidades-seguridad .inner {
     display: flex;
     justify-content: center;
@@ -500,6 +489,10 @@ button:hover {
     margin: 50px;
 
     max-width: 250px;
+}
+
+.identidad ul{
+    padding: 0%;
 }
 
 .identidad li{
@@ -846,13 +839,13 @@ footer .btn:focus {
     }
 
     #identidades-seguridad .identidad {
-        
         font-size: 2rem;
         max-width: 800px;
     }
 
-    #identidades-seguridad .identidad li{
-        font-size: rem;
+    .identidad ul{
+        padding: 0%;
+        font-size: 1.5rem;
     }
 
     #sobre .grid {
@@ -866,14 +859,14 @@ footer .btn:focus {
     }
 
     #sobre .card {
-        padding: 10%;
+        padding: 5%;
         flex: 700px;
-        width: 350px;
-        height: 580px;
+        width: 450px;
+        height: 600px;
     }
 
     #sobre p {
-        font-size: 1.5rem;
+        font-size: 1.8rem;
     }
 
     #testimonials .grid {
@@ -962,6 +955,5 @@ footer .btn:focus {
         padding: 5% 0 0 10%;
         box-sizing: border-box;
     }
-
 
 }
