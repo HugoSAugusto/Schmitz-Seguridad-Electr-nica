@@ -151,14 +151,29 @@ header{
 
 .line1 {
     color: var(--white);
-    animation: typing1 3s steps(15, end) forwards, blink 0.5s step-end infinite;
+    margin: auto;
+    font-size: 5rem;
+    text-shadow: 2px 2px 20px var(--muted);
+    animation: typing1 2s steps(15, end) forwards, blink 0.5s step-end infinite;
 }
 
-/* Segunda linha */
 .line2 {
     color: var(--red);
-    animation: typing2 3s steps(25, end) forwards, blink 0.8s step-end infinite;
+    margin: auto;
+    font-size: 4rem;
+    text-shadow: 2px 2px 20px var(--muted);
+    animation: typing2 2s steps(25, end) forwards, blink 0.1s step-end infinite;
     animation-delay: 1.2s;
+}
+
+.slogan {
+    opacity: 0.9;
+    color: var(--muted);
+    margin-top: 80px;
+    font-size: 1.8rem;
+    text-shadow: 2px 1px 20px rgba(0, 0, 0, 0.815);
+    animation: typing3 2s steps(45, end) forwards, blink 0.1s step-end infinite;
+    animation-delay: 3.5s;
 }
 
 @keyframes typing1 {
@@ -171,18 +186,9 @@ header{
     to { width: 100%; }
 }
 
-/* Slogan */
-.slogan {
-    opacity: 0;
-    margin-top: 1rem;
-    font-size: 1.5rem;
-    animation: fadein 2s ease forwards;
-    animation-delay: 6.5s;
-}
-
-@keyframes fadein {
-    from { opacity: 0; transform: translateY(20px); }
-    to { opacity: 1; transform: translateY(0); }
+@keyframes typing3 {
+    from { width: 0; }
+    to { width: 100%; }
 }
 
 /* Sections */
@@ -784,6 +790,9 @@ footer .btn:focus {
 }
 
 @media (max-width: 1300px) {
+    p{
+        font-size: 1.3rem;
+    }
     .navbar {
         font-size: 1rem;
         padding: 1%;
@@ -934,6 +943,7 @@ footer .btn:focus {
     }
 
     footer {
+        justify-content: center;
         font-size: 1.8rem;
         background: var(--dark);
         color: var(--white);
@@ -941,14 +951,18 @@ footer .btn:focus {
     }
 
     footer .grid {
+        grid-template-columns: 1fr;
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
         gap: 2rem;
     }
+    
+    .footer-col h3{
+        font-size: 1.8rem;
+    }
 
-    footer .grid {
-       grid-template-columns: 1fr;
-    } 
+    .footer-col p{
+        font-size: 1.5rem;
+    }
 
     .footer-cols {
         margin: 0;
