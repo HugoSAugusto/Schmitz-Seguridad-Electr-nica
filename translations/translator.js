@@ -136,8 +136,25 @@ function trocarIdioma(lang) {
     localStorage.setItem("lang", lang);
 }
 
-// Carregar idioma salvo
 document.addEventListener("DOMContentLoaded", () => {
-    const langSalvo = localStorage.getItem("lang") || "es";
-    trocarIdioma(langSalvo);
+    const langBtn = document.getElementById("lang-btn");
+    let langAtual = localStorage.getItem("lang") || "es";
+
+    // Atualiza idioma inicial
+    trocarIdioma(langAtual);
+    atualizarBotao(langAtual);
+
+    langBtn.addEventListener("click", () => {
+        langAtual = langAtual === "es" ? "pt" : "es"; 
+        trocarIdioma(langAtual);
+        atualizarBotao(langAtual);
+    });
+
+    function atualizarBotao(lang) {
+        if (lang === "es") {
+            langBtn.textContent = "🇪🇸 ES";
+        } else {
+            langBtn.textContent = "🇧🇷 PT";
+        }
+    }
 });

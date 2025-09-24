@@ -107,6 +107,21 @@ header{
     cursor: pointer;
 }
 
+.lang-switch button {
+    background: #1e293b;   /* cor escura */
+    color: #fff;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+}
+
+.lang-switch button:hover {
+    background: #334155;   /* cor mais clara no hover */
+    transform: scale(1.05);
+}
 
 
 /* Hero video*/
