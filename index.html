@@ -26,11 +26,15 @@
                 <a href="index.html" class="logo">Schmitz Seguridad Electrónica</a>
                 <div class="menu-toggle" id="menu-toggle">&#9776;</div>
                     <ul class="nav-links" id="nav-links">
-                    <li><a href="#home">Inicio</a></li>
-                    <li><a href="servicios.html">Servicios</a></li>
+                    <li><a href="#home" data-translate="nav.home">Inicio</a></li>
+                    <li><a href="servicios.html" data-translate="nav.services">Servicios</a></li>
                     <li><a href="#unidades">Unidades</a></li>
                     <li><a href="#faq">programar un servicio</a></li>
                 </ul>
+                <div class="lang-switch">
+            <button onclick="trocarIdioma('es')">🇪🇸 ES</button>
+            <button onclick="trocarIdioma('pt')">🇧🇷 PT</button>
+        </div>
             </div>
         </nav>
     </header>
@@ -40,20 +44,19 @@
         </video>
         <div class="hero-content">
             <h1 class="typewriter-line line1">Schmitz</h1>
-            <h1 class="typewriter-line line2">Seguridad Electrónica</h1>
-            <p class="typewriter-line slogan">Confíe su seguridad a profesionales</p>
+            <h1 class="typewriter-line line2" data-translate="hero.subtitle">Seguridad Electrónica</h1>
+            <p class="typewriter-line slogan" data-translate="hero.slogan">Confíe su seguridad a profesionales</p>
         </div>
     </section>
 
         <!-- Carrusel -->
     <section class="carousel" class="container">
-        <h2>Nuestro sistema de seguridad</h2>
-        <h3>Expert en Seguridad Electrónica</h3>
+        <h2 data-translate="trad.car">Nuestro sistema de seguridad</h2>
+        <h3 data-translate="trad.con">Expert en Seguridad Electrónica</h3>
         <div class="carousel-container">
             
             <div class="carousel-item active">
                 <img src="img/2.png" alt="Segurança residencial">
-                
             </div>
             <div class="carousel-item">
                 <img src="img/3.png" alt="Segurança empresarial">
@@ -108,21 +111,21 @@
     <!-- Servicios -->
     <section id="servicios-section" class="services-section">
         <div id="openModal" class="central-btn">
-            <h2>Conozca nuestros servicios</h2>
+            <h2 data-translate="trad.co">Leer nuestros servicios</h2>
         </div>
         <div class="modal" id="servicesModal">
             <div class="modal-content">
                 <span class="close">&times;</span>
                 <section class="container">
-                    <h2>Servicios</h2>
+                    <h2 data-translate="nav.services">Servicios</h2>
                      <div>
-                        <h3 class="title">Protegemos lo que más importa — <strong>Seguridad 360°</strong> para hogares, empresas y grandes proyectos.</h3>
-                        <p>Soluciones completas: cámaras HD, monitoreo humano 24/7, conectividad para hoteles (Starlink + SI Net), seguridad para grandes fazendas y mucho más.</p>
+                        <h3 class="title" data-translate="trad.serv1">Protegemos lo que más importa — <strong>Seguridad 360°</strong> para hogares, empresas y grandes proyectos.</h3>
+                        <p data-translate="trad.serv2">Soluciones completas: cámaras HD, monitoreo humano 24/7, conectividad para hoteles (Starlink + SI Net), seguridad para grandes fazendas y mucho más.</p>
                      </div>
                     <div class="grid grid-3" style="margin-top:1rem">
                         <article class="card">
                             <div class="card-text">
-                                <h3>Cámaras de Seguridad HD</h3>
+                                <h3 data-translate="trad.serv3">Cámaras de Seguridad HD</h3>
                             </div>
                             <div class="card-img">
                                 <img src="img/assets/cam1.jpeg" alt="monitoramento" class="card-bg">
@@ -130,7 +133,7 @@
                         </article>
                         <article class="card">
                             <div class="card-text">
-                                <h3>Monitoreo en vivo 24/7</h3>
+                                <h3 data-translate="trad.serv4">Monitoreo en vivo 24/7</h3>
                             </div>
                             <div class="card-img">
                                 <img src="img/assets/cam24.jpeg" alt="" class="card-bg">
@@ -138,7 +141,7 @@
                         </article>
                         <article class="card">
                             <div class="card-text">
-                                <h3>Seguridad para Hoteles (Starlink + SI Net)</h3>
+                                <h3 data-translate="trad.serv5">Seguridad para Hoteles (Starlink + SI Net)</h3>
                             </div>
                             <div class="card-img">
                                 <img src="img/assets/blk.jpeg" alt="" class="card-bg">
@@ -146,7 +149,7 @@
                         </article>
                         <article class="card">
                             <div class="card-text">
-                                <h3>Seguridad en Grandes Fazendas</h3>
+                                <h3 data-translate="trad.serv6">Seguridad en Grandes Fazendas</h3>
                             </div>
                             <div class="card-img">
                                 <img src="img/assets/ctv.jpeg" alt="" class="card-bg">
@@ -154,7 +157,7 @@
                         </article>
                         <article class="card">
                             <div class="card-text">
-                                <h3>Sistemas de Alarma y Control de Acceso</h3>
+                                <h3 data-translate="trad.serv7">Sistemas de Alarma y Control de Acceso</h3>
                             </div>
                             <div class="card-img">
                                 <img src="img/assets/alrt.jpeg" alt="" class="card-bg">
@@ -177,56 +180,56 @@
 
     <!-- Sobre -->
     <section id="sobre" class="container">
-        <h2>Sobre Nosotros</h2>
-        <p>Nacimos comprometidos con la <strong>calidad</strong> y creemos que la <strong>transparencia</strong> es nuestro mayor pilar. Brindamos soluciones de seguridad confiables, escalables y con soporte cercano.</p>
+        <h2 data-translate="trad.sob">Sobre Nosotros</h2>
+        <p data-translate="trad.sob1">Nacimos comprometidos con la <strong>calidad</strong> y creemos que la <strong>transparencia</strong> es nuestro mayor pilar. Brindamos soluciones de seguridad confiables, escalables y con soporte cercano.</p>
 
         <div class="grid grid-3" style="margin-top:1rem">
             <article class="card">
-                <h3>Misión</h3>
-                <p>Nuestra misión es proteger personas, empresas y activos, integrando tecnología avanzada en cámaras, alarmas, internet satelital y monitoreo en tiempo real, con la capacidad insustituible del servicio humano.</p>
+                <h3 data-translate="trad.sob2">Misión</h3>
+                <p data-translate="trad.sob3">Nuestra misión es proteger personas, empresas y activos, integrando tecnología avanzada en cámaras, alarmas, internet satelital y monitoreo en tiempo real, con la capacidad insustituible del servicio humano.</p>
             </article>
 
             <article class="card">
-                <h3>Vision</h3>
-                <p>Nuestra visión es ser la referencia en seguridad electrónica en Paraguay, con presencia sólida en Ciudad del Este y Nueva Esperanza, ofreciendo soluciones integrales en cámaras, monitoreo humano 24/7, internet satelital y tecnologías inteligentes.
+                <h3 data-translate="trad.sob4">Vision</h3>
+                <p data-translate="trad.sob5">Nuestra visión es ser la referencia en seguridad electrónica en Paraguay, con presencia sólida en Ciudad del Este y Nueva Esperanza, ofreciendo soluciones integrales en cámaras, monitoreo humano 24/7, internet satelital y tecnologías inteligentes.
             </article>
 
             <article class="card">
                 <h3>Valores</h3>
-                <p>Trabajamos con honestidad y comunicación clara, ofreciendo confianza total a nuestros clientes en Ciudad del Este, Nueva Esperanza, Katuete, Curuguaty y todo Paraguay.</p>
+                <p data-translate="trad.sob6">Trabajamos con honestidad y comunicación clara, ofreciendo confianza total a nuestros clientes en Ciudad del Este, Nueva Esperanza, Katuete, Curuguaty y todo Paraguay.</p>
             </article>
         </div>
     </section>
 
     <!-- identidades -->
     <section id="identidades-seguridad">
-        <h2>Nuestros Servicios</h2>
+        <h2 data-translate="trad.ide">Nuestros Servicios</h2>
         <div class="inner">
             <div class="identidad">
                 <img src="img/assets/casa.png" alt="Seguridad Residencial">
-                <h3>Seguridad Residencial</h3>
+                <h3 data-translate="trad.ide1">Seguridad Residencial</h3>
                 <ul>
-                    <li>Su casa o empresa protegida 24horas;</li>
-                    <li>Monitora la atividad de cada colaborador;</li>
-                    <li>Mantenga la ordene sobre monitoramiento de animales</li>
+                    <li data-translate="trad.ide2">Su casa o empresa protegida 24horas;</li>
+                    <li data-translate="trad.ide3">Monitora la atividad de cada colaborador;</li>
+                    <li data-translate="trad.ide4">Mantenga la ordene sobre monitoramiento de animales</li>
                 </ul>
             </div>
             <div class="identidad">
                 <img src="img/assets/booking.png" alt="Seguridad Comercial">
-                <h3>seguridad en sus manos</h3>
+                <h3 data-translate="trad.ide5">seguridad en sus manos</h3>
                 <ul>
-                    <li>Controle inmediato desde su celular;</li>
-                    <li>Acceso remoto a cámaras en tiempo real;</li>
-                    <li>Monitoreo humano que anticipa riesgos</li>
+                    <li data-translate="trad.ide6">Controle inmediato desde su celular;</li>
+                    <li data-translate="trad.ide7">Acceso remoto a cámaras en tiempo real;</li>
+                    <li data-translate="trad.ide8">Monitoreo humano que anticipa riesgos</li>
                 </ul>
             </div>
             <div class="identidad">
                 <img src="img/assets/security.png" alt="Cámaras de Vigilancia">
-                <h3>Cámaras de Vigilancia</h3>
+                <h3 data-translate="trad.ide9">Cámaras de Vigilancia</h3>
                 <ul>
-                    <li>Imágenes nítidas en todo momento;</li>
-                    <li>Visión nocturna de última generación;</li>
-                    <li>Monitoreo en vivo desde cualquier lugar</li>
+                    <li data-translate="trad.ide10">Imágenes nítidas en todo momento;</li>
+                    <li data-translate="trad.ide11">Visión nocturna de última generación;</li>
+                    <li data-translate="trad.ide12">Monitoreo en vivo desde cualquier lugar</li>
                 </ul>
             </div>
         </div>
@@ -236,16 +239,16 @@
     <!-- Testimonios / Clientes -->
     <section id="testimonials">
         <div class="container">
-            <h2>Clientes y Testimonios</h2>
+            <h2 data-translate="trad.test">Clientes y Testimonios</h2>
             <div class="grid grid-3" style="margin-top:1rem">
                 <div class="card">
-                    <p>“Instalación impecable y soporte rápido. Ahora tenemos visibilidad total del hotel.” <br>— <strong>Gerente de Hotel</strong></p>
+                    <p data-translate="trad.test1">“Instalación impecable y soporte rápido. Ahora tenemos visibilidad total del hotel.” <br>— <strong>Gerente de Hotel</strong></p>
                 </div>
                 <div class="card">
-                    <p>“El monitoreo humano 24/7 nos dio tranquilidad operativa.” <br>— <strong>Administrador Industrial</strong></p>
+                    <p data-translate="trad.test2">“El monitoreo humano 24/7 nos dio tranquilidad operativa.” <br>— <strong>Administrador Industrial</strong></p>
                 </div>
                 <div class="card">
-                    <p>“Cobertura de red en toda la fazenda con replicadores, funcionó perfecto.”<br> — <strong>Productor Rural</strong></p>
+                    <p data-translate="trad.test3">“Cobertura de red en toda la fazenda con replicadores, funcionó perfecto.”<br> — <strong>Productor Rural</strong></p>
                 </div>
             </div>
         </div>
@@ -261,7 +264,7 @@
                     <a href="https://maps.google.com/?q=Nueva%20Esperanza%20Paraguay" target="_blank" rel="noopener">
                         <h3>Casa Matriz Nueva Esperanza</h3>
                     </a>
-                    <p>Atención regional.</p>
+                    <p data-translate="trad.at">Atención regional.</p>
                     <div class="contact">
                         <a href="tel:+595981329999">+595 981 329999</a>
                         <a href="https://wa.me/595981329999" target="_blank" rel="noopener">
@@ -277,7 +280,7 @@
                     <a href="https://maps.google.com/?q=Ciudad%20del%20Este%20KM4" target="_blank" rel="noopener">
                         <h3>Sucursal Ciudad Del Est KM4</h3>
                     </a>
-                    <p>Atención regional.</p>
+                    <p data-translate="trad.at">Atención regional.</p>
                     <div class="contact">
                         <a href="tel:+595983924185">+595 983 924185</a>
                         <a href="https://wa.me/595983924185" target="_blank" rel="noopener">
@@ -291,31 +294,31 @@
 
     <!-- FAQ / Preguntas Frecuentes -->
     <section id="faq" class="container">
-    <h2>Preguntas Frecuentes</h2>
+    <h2 data-translate="trad.fre">Preguntas Frecuentes</h2>
         <div class="grid grid-1" style="margin-top:1rem; gap:1rem;">
             <article class="faq-card">
-                <h3>¿Cuál es el horario de atención?</h3>
-                <p>Nuestro equipo atiende de lunes a viernes, de 8:00 a 18:00.</p>
+                <h3 data-translate="trad.fre1">¿Cuál es el horario de atención?</h3>
+                <p data-translate="trad.fre2">Estamos abiertos de lunes a viernes, de 8h a 18h.</p>
             </article>
 
             <article class="faq-card">
-                <h3>¿Ofrecen soporte 24 horas?</h3>
-                <p>Sí, contamos con monitoreo continuo y atención remota.</p>
+                <h3 data-translate="trad.fre3">¿Ofrecen soporte 24 horas?</h3>
+                <p data-translate="trad.fre4">Sí, contamos con monitoreo continuo y atención remota.</p>
             </article>
 
             <article class="faq-card">
-                <h3>¿Qué tipos de sistemas de seguridad instalan?</h3>
-                <p>Cámaras, alarmas, control de acceso y soluciones personalizadas.</p>
+                <h3 data-translate="trad.fre5">¿Qué tipos de sistemas de seguridad instalan?</h3>
+                <p data-translate="trad.fre6">Cámaras, alarmas, control de acceso y soluciones personalizadas.</p>
             </article>
 
             <article class="faq-card">
-                <h3>¿Realizan instalaciones en todo el país?</h3>
-                <p>Sí, tenemos cobertura nacional con equipo propio.</p>
+                <h3 data-translate="trad.fre7">¿Realizan instalaciones en todo el país?</h3>
+                <p data-translate="trad.fre8">Sí, tenemos cobertura nacional con equipo propio.</p>
             </article>
 
             <article class="faq-card">
-                <h3>¿Cómo puedo ponerme en contacto?</h3>
-                <p>Por teléfono o WhatsApp, según la información del sitio web.</p>
+                <h3 data-translate="trad.fre9">¿Cómo puedo ponerme en contacto?</h3>
+                <p data-translate="trad.fre10">Por teléfono o WhatsApp, que está al lado.</p>
             </article>
         </div>
     </section>
@@ -323,13 +326,13 @@
     <footer>
         <div class="footer-cols grid">
             <div class="footer-col ">
-                <h3>Servicios</h3>
-                <p>Conoce nuestros servicios principales</p>
-                <button class="btn" onclick="openServicesModal()">Ver Servicios</button>
+                <h3 data-translate="nav.services">Servicios</h3>
+                <p data-translate="trad.foo">Conoce nuestros servicios principales</p>
+                <button class="btn" onclick="openServicesModal()" data-translate="nav.services">Ver Servicios</button>
             </div>
             <div class="footer-col">
-                <h3>Síguenos</h3>
-                <p>Conéctate con nosotros en nuestras redes sociales</p>
+                <h3 data-translate="trad.red">Redes Sociales</h3>
+                <p data-translate="trad.red1">Conéctate con nosotros en nuestras redes sociales</p>
                     <div class="social-links">
                     <a href="https://www.facebook.com/schmitzseguridadeletronica/" target="_blank" rel="noopener" aria-label="Facebook">
                         <img src="img/assets/facebook.png" alt="Facebook">
@@ -352,7 +355,7 @@
         </div>
 
         <div class="legal">
-            <p>&copy; 2025 Schmitz Seguridad Electrónica. Todos los derechos reservados.</p>
+            <p data-translate="trad.foo2">&copy; 2025 Schmitz Seguridad Electrónica. Todos los derechos reservados.</p>
         </div>
     </footer>
 
@@ -405,7 +408,7 @@
 
     </script>
 
-
+    <script src="translations/translator.js"></script>
     <script src="js/script.js"></script>
     <script src="js/main.js"></script>
     <script src="js/carrusel.js"></script>
