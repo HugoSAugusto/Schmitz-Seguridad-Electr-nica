@@ -23,13 +23,13 @@
         <section class="container" >
             <h2>Servicios</h2>
             <div style="margin-top: 150px; text-align: center;">
-                <h2 class="title">Protegemos lo que más importa — <strong>Seguridad 360°</strong> para hogares, empresas y grandes proyectos.</h2>
-                <p>Soluciones completas: cámaras HD, monitoreo humano 24/7, conectividad para hoteles (Starlink + SI Net), seguridad para grandes fazendas y mucho más.</p>
+                <h2 class="title" data-translate="trad.serv1">Protegemos lo que más importa — <strong>Seguridad 360°</strong> para hogares, empresas y grandes proyectos.</h2>
+                <p>Soluciones completas: cámaras HD, monitoreo humano 24/7, conectividad para hoteles, seguridad para grandes fazendas y mucho más.</p>
             </div>
             <div id="servicios" class="grid" style="margin:1rem;color:black; padding:5% 10%;">
-                <article class="card" >
+                <article class="card">
                     <div class="card-text">
-                        <h3> Cámaras de Seguridad HD</h3>
+                        <h3 data-translate="trad.serv3">Cámaras de Seguridad HD</h3>
                     </div>
                     <div class="card-img">
                         <img src="img/assets/cam1.jpeg" alt="monitoramento" class="card-bg">
@@ -37,7 +37,7 @@
                 </article>
                 <article class="card">
                     <div class="card-text">
-                        <h3> Monitoreo en vivo 24/7</h3>
+                        <h3 data-translate="trad.serv4">Monitoreo en vivo 24/7</h3>
                     </div>
                     <div class="card-img">
                         <img src="img/assets/cam24.jpeg" alt="" class="card-bg">
@@ -45,7 +45,7 @@
                 </article>
                 <article class="card">
                     <div class="card-text">
-                        <h3> Seguridad para Hoteles</h3>
+                        <h3 data-translate="trad.serv5">Seguridad para Hoteles</h3>
                     </div>
                     <div class="card-img">
                         <img src="img/assets/blk.jpeg" alt="" class="card-bg">
@@ -53,7 +53,7 @@
                 </article>
                 <article class="card">
                     <div class="card-text">
-                        <h3> Seguridad en Grandes Fazendas</h3>
+                        <h3 data-translate="trad.serv6">Seguridad en Grandes Fazendas</h3>
                     </div>
                     <div class="card-img">
                         <img src="img/assets/ctv.jpeg" alt="" class="card-bg">
@@ -61,83 +61,96 @@
                 </article>
                 <article class="card">
                     <div class="card-text">
-                        <h3> Sistemas de Alarma y Control de Acceso</h3>
+                        <h3 data-translate="trad.serv7">Sistemas de Alarma y Control de Acceso</h3>
                     </div>
                     <div class="card-img">
                         <img src="img/assets/alrt.jpeg" alt="" class="card-bg">
                     </div>
                 </article>
-    
                 <article class="card" id="srv-redes">
                     <div class="card-text">
-                        <h3> Redes de Seguridad y Conectividad</h3>
+                        <h3 data-translate="trad.serv7">Redes de Seguridad y Conectividad</h3>
                     </div>
                     <div class="card-img">
                         <img src="img/assets/web.jpeg" alt="" class="card-bg">
                     </div>
-                    
                 </article>
             </div>
         </section>
 
+    <!-- identidades -->
         <section id="identidades-seguridad">
-        <h2>Nuestros Servicios</h2>
-        <div class="inner">
-            <div class="identidad">
-                <img src="img/assets/casa.png" alt="Seguridad Residencial">
-                <h3>Seguridad Residencial</h3>
+        <h2 data-translate="trad.ide">Nuestros Servicios</h2>
+            <div class="inner">
+                <div class="identidad">
+                    <img src="img/assets/casa.png" alt="Seguridad Residencial">
+                    <h3 data-translate="trad.ide1">Seguridad Residencial</h3>
+                    <ul>
+                        <li data-translate="trad.ide2">Su casa o empresa protegida 24horas;</li>
+                        <li data-translate="trad.ide3">Monitora la atividad de cada colaborador;</li>
+                        <li data-translate="trad.ide4">Mantenga la ordene sobre monitoramiento de animales</li>
+                    </ul>
+                </div>
+                <div class="identidad">
+                    <img src="img/assets/booking.png" alt="Seguridad Comercial">
+                    <h3 data-translate="trad.ide5">seguridad en sus manos</h3>
+                    <ul>
+                        <li data-translate="trad.ide6">Controle inmediato desde su celular;</li>
+                        <li data-translate="trad.ide7">Acceso remoto a cámaras en tiempo real;</li>
+                        <li data-translate="trad.ide8">Monitoreo humano que anticipa riesgos</li>
+                    </ul>
+                </div>
+                <div class="identidad">
+                    <img src="img/assets/security.png" alt="Cámaras de Vigilancia">
+                    <h3 data-translate="trad.ide9">Cámaras de Vigilancia</h3>
+                    <ul>
+                        <li data-translate="trad.ide10">Imágenes nítidas en todo momento;</li>
+                        <li data-translate="trad.ide11">Visión nocturna de última generación;</li>
+                        <li data-translate="trad.ide12">Monitoreo en vivo desde cualquier lugar</li>
+                    </ul>
+                </div>
             </div>
-            <div class="identidad">
-                <img src="img/assets/booking.png" alt="Seguridad Comercial">
-                <h3>seguridad en sus manos</h3>
+        </section>
+    </header>
+    <footer>
+        <div class="footer-cols grid">
+            <div class="footer-col ">
+                <h3 data-translate="nav.services">Servicios</h3>
+                <p data-translate="trad.foo">Conoce nuestros servicios principales</p>
+                <button class="btn" onclick="openServicesModal()" data-translate="nav.services">Ver Servicios</button>
             </div>
-            <div class="identidad">
-                <img src="img/assets/security.png" alt="Cámaras de Vigilancia">
-                <h3>Cámaras de Vigilancia</h3>
+            <div class="footer-col">
+                <h3 data-translate="trad.red">Redes Sociales</h3>
+                <p data-translate="trad.red1">Conéctate con nosotros en nuestras redes sociales</p>
+                    <div class="social-links">
+                    <a href="https://www.facebook.com/schmitzseguridadeletronica/" target="_blank" rel="noopener" aria-label="Facebook">
+                        <img src="img/assets/facebook.png" alt="Facebook">
+                    </a>
+                    <a href="https://www.instagram.com/schmitzseguridad/" target="_blank" rel="noopener" aria-label="Instagram">
+                        <img src="img/assets/instagram.png" alt="Instagram">
+                    </a>
+                    <a href="https://wa.me/595981329999" target="_blank" rel="noopener" aria-label="WhatsApp">
+                        <img src="img/assets/whatsapp.svg" alt="WhatsApp">
+                    </a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h3>Contáctanos</h3>
+                <p>Casa Matriz Nueva Esperanza</p>
+                <p>📞 +595 981 329999</p>
+                <p>Sucursal Ciudad del Este KM4</p>
+                <p>📞 +595 983 924185</p>
             </div>
         </div>
-    </section>
-    
-        <footer>
-            <div class="footer-cols grid">
-                <div class="footer-col ">
-                    <h3>Servicios</h3>
-                    <p>Conoce nuestros servicios principales:</p>
-                    <button class="btn" onclick="openServicesModal()">Ver Servicios</button>
-                </div>
-                <div class="footer-col">
-                    <h3>Síguenos</h3>
-                    <p>Conéctate con nosotros en nuestras redes sociales:</p>
-                        <div class="social-links">
-                        <a href="https://www.facebook.com/schmitzseguridadeletronica/" target="_blank" rel="noopener" aria-label="Facebook">
-                            <img src="img/assets/facebook.png" alt="Facebook">
-                        </a>
-                        <a href="https://www.instagram.com/schmitzseguridad/" target="_blank" rel="noopener" aria-label="Instagram">
-                            <img src="img/assets/instagram.png" alt="Instagram">
-                        </a>
-                        <a href="https://wa.me/595981329999" target="_blank" rel="noopener" aria-label="WhatsApp">
-                            <img src="img/assets/whatsapp.png" alt="WhatsApp">
-                        </a>
-                    </div>
-                </div>
-                <div class="footer-col">
-                    <h3>Contáctanos</h3>
-                    <p>📍 Casa Matriz Nueva Esperanza</p>
-                    <p>+595 981 329999</p>
-                    <p>📍 Sucursal Ciudad del Este KM4</p>
-                    <p>+595 983 924185</p>
-                </div>
-            </div>
 
-            <div class="legal">
-                <p>&copy; 2025 Schmitz Seguridad Electrónica. Todos los derechos reservados.</p>
-            </div>
-        </footer>
-    </header>
-     <script>
+        <div class="legal">
+            <p data-translate="trad.foo2">&copy; 2025 Schmitz Seguridad Electrónica. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+    
+    <script>
         const menuToggle = document.getElementById('menu-toggle');
         const navLinks = document.getElementById('nav-links');
-
         menuToggle.addEventListener('click', () => {
             navLinks.classList.toggle('show');
         });
@@ -168,7 +181,7 @@
         }
     </script>
 
-    <script src="translations/translator.js"></script>
+    <script src="translations/translator2.js"></script>
     <script src="js/script.js"></script>
     <script src="js/main.js"></script>
     <script src="js/carrusel.js"></script>
