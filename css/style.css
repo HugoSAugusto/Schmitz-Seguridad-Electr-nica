@@ -123,7 +123,6 @@ header{
     transform: scale(1.05);
 }
 
-
 /* Hero video*/
 .hero {
     position: relative;
@@ -158,55 +157,54 @@ header{
     align-items: center;
 }
 
-.typewriter-line {
-    font-size: 3rem;
-    font-weight: 800;
-    white-space: nowrap;
-    overflow: hidden;
-    width: 0;
-}
-
 .line1 {
     color: var(--white);
     margin: auto;
-    font-size: 5rem;
-    text-shadow: 2px 2px 20px var(--muted);
-    animation: typing1 2s steps(15, end) forwards, blink 0.5s step-end infinite;
+    font-size: 4rem;
 }
 
 .line2 {
-    color: var(--red);
+    color: var(--white);
     margin: auto;
-    font-size: 4rem;
-    text-shadow: 2px 2px 20px var(--muted);
-    animation: typing2 2s steps(25, end) forwards, blink 0.1s step-end infinite;
-    animation-delay: 1.2s;
+    font-size: 3rem;
 }
 
 .slogan {
     opacity: 0.9;
     color: var(--muted);
     margin-top: 80px;
-    font-size: 1.8rem;
-    text-shadow: 2px 1px 20px rgba(0, 0, 0, 0.815);
-    animation: typing3 2s steps(45, end) forwards, blink 0.1s step-end infinite;
-    animation-delay: 3.5s;
+    font-size: 1.2rem;
 }
 
-@keyframes typing1 {
-    from { width: 0; }
-    to { width: 100%; }
+.slogan2 {
+    background-color: var(--muted);
+    font-size: 1.2rem;
+    padding: 1%;
 }
 
-@keyframes typing2 {
-    from { width: 0; }
-    to { width: 100%; }
+@keyframes slideInRight {
+    from {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
 }
 
-@keyframes typing3 {
-    from { width: 0; }
-    to { width: 100%; }
+.hero-content .typewriter-line,
+.hero-content .slogan,
+.hero-content .slogan2 {
+    opacity: 0;
+    animation: slideInRight 2s ease-out forwards;
 }
+
+.hero-content .line1 { animation-delay: 0.3s; }
+.hero-content .line2 { animation-delay: 0.6s; }
+.hero-content .slogan { animation-delay: 0.9s; }
+.hero-content .slogan { animation-delay: 0.12s; }
+
 
 /* Sections */
 section{
