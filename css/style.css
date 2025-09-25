@@ -393,20 +393,20 @@ button:hover {
 
 /* Services grid */
 #servicios{
+    display: flex;
     justify-content: center;
     text-align: center;
 }
 .grid{
-    display:grid;
-    gap:1rem
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
 }
 
-.grid-3{
-    grid-template-columns:repeat(3,1fr)
-}
-    
-.grid-2{
-    grid-template-columns:repeat(2,1fr)
+.grid .card {
+    flex: 1 1 250px;
+    max-width: 100%;
 }
 
 .card {
@@ -459,11 +459,8 @@ button:hover {
 }
 
 #sobre h2 {
-    font-size: 5rem;
-    margin-bottom: 1rem;
+    font-size: 5em;
     color: var(--red);
-    position: relative;
-    display: inline-block;
 }
 
 #sobre h2::after {
@@ -613,11 +610,7 @@ button:hover {
     to { width: 50%; } 
 }
 
-.unit iframe{
-    width:100%;
-    height:300px;
-    border:0
-}
+
 
 .meta .contact {
     display: flex;
@@ -688,7 +681,7 @@ button:hover {
 
 .faq-card {
     background: #fff;
-    padding: 1.5rem;
+    padding: 0 20%;
     border-radius: 12px;
     box-shadow: 0 4px 12px rgba(0,0,0,0.05);
     text-align: left;
@@ -833,32 +826,30 @@ footer .btn:focus {
     }
     .navbar {
         font-size: 1rem;
-        padding: 1%;
-        height: 10rem;
+        padding: 5% 0 ;
+     
     }
 
-    .menu-toggle li{
-        font-size: 2rem;
-    }
-    /* .nav-links {
+    .nav-links {
         display: flex;
         flex-direction: column;
         position: fixed;
         top: 0;
         right: 0;
         height: 100vh;
-        width: 0; 
-        background: rgba(0,0,0,0.95);
-        overflow-x: hidden; 
-        overflow-y: auto; 
-        transition: width 0.3s ease;
-        padding-top: 80px;
-        z-index: 999;
-        box-sizing: border-box;
+        width: 0;  
+        transition: width 0.3s ease;       
+        box-sizing: border-box;   
+        
+    }
+    
+    .nav-links {
+        overflow: hidden;
     }
 
     .nav-links.show {
-        width: 80%;
+        background: rgba(0,0,0,0.95);
+        width: 30%;
         transform: translateX(0); 
     }
 
@@ -873,11 +864,27 @@ footer .btn:focus {
     }
 
     .menu-toggle {
+        padding: 0 2% 0 2% ;
         display: block;
-    } */
+    } 
+
+    #servicesModal .card{
+        padding: auto;
+        width: 250px;
+        height: 250px;
+        margin: 0 auto
+    }
 
     #identidades-seguridad h2 {
-        font-size: 5rem;
+        font-size: clamp(2.5rem, 5vw, 5em)
+    }
+
+    #identidades-seguridad h3 {
+        font-size: clamp(2rem, 5vw, 5em)
+    }
+
+    #identidades-seguridad li {
+        font-size: clamp(1rem, 1vw, 1em)
     }
 
     #identidades-seguridad .inner {
@@ -908,12 +915,11 @@ footer .btn:focus {
     #sobre .card {
         padding: 5%;
         flex: 700px;
-        width: 450px;
-        height: 600px;
+        height: 10%;
     }
 
     #sobre p {
-        font-size: 1.6rem;
+        font-size: 1rem;
     }
 
     #testimonials .grid {
@@ -929,19 +935,18 @@ footer .btn:focus {
     #testimonials .card {
         padding: auto;
         flex: 600px;
-        width: 350px;
-        height: 350px;
+        width: 10%;
+        height: 250px;
         margin: 0 auto
     }
 
     #testimonials h2{
-        font-size: 3rem;
-        padding: 10%;
+        font-size: clamp(2rem, 5vw, 5em);
     }
 
     #testimonials p{
-        font-size: 1.8rem;
-        padding: 10%;
+        font-size: 1rem;
+        padding: 1%;
     }
     
     #unidades .grid {
@@ -965,15 +970,14 @@ footer .btn:focus {
 
     /* iframe do mapa */
     #unidades .unit iframe {
-        width: 750px;
+        width: 80vw;
         height: 500px;
         border: 0;
         border-radius: 1rem;
     }
 
     #unidades h2{
-        font-size: 3rem;
-        padding: 3rem;
+        font-size: clamp(2rem, 5vw, 5em);
     }
 
     #unidades h3{
@@ -998,7 +1002,6 @@ footer .btn:focus {
 
     footer {
         justify-content: center;
-        font-size: 1.8rem;
         background: var(--dark);
         color: var(--white);
         padding: 0;        
@@ -1011,11 +1014,11 @@ footer .btn:focus {
     }
     
     .footer-col h3{
-        font-size: 1.8rem;
+        font-size: 1.5rem;
     }
 
     .footer-col p{
-        font-size: 1.5rem;
+        font-size: 1rem;
     }
 
     .footer-cols {
@@ -1024,4 +1027,89 @@ footer .btn:focus {
         box-sizing: border-box;
     }
 
+    .legal p{
+        font-size: 0.7rem;
+    }
+
+}
+@media (max-width: 800px){
+    p{
+        font-size: 1.3rem;
+    }
+
+    .nav-links {
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        top: 0;
+        right: 0;
+        height: 100vh;
+        width: 0;  
+        transition: width 0.3s ease;       
+        box-sizing: border-box;   
+    }
+    
+    .nav-links {
+        overflow: hidden;
+    }
+
+    .nav-links.show {
+        background: rgba(0,0,0,0.95);
+        width: 40%;
+        transform: translateX(0); 
+    }
+
+    .nav-links li {
+        margin: 1.5rem 0;
+        text-align: center;
+    }
+
+    .nav-links li a {
+        font-size: 1.5rem;
+        color: var(--white);
+    }
+
+    .menu-toggle {
+        display: block;
+    } 
+
+    .container{
+        padding: auto;
+    }
+
+    .grid{
+        display: flex;
+        flex-wrap: wrap;        /* permite quebrar em várias linhas */
+        gap: 1rem;
+    }
+
+    .grid .card {
+
+        flex: 1 1 150px;
+        max-width: 100%;
+    }
+
+    #sobre h2 {
+        font-size: clamp(2rem, 5vw, 5em);   
+    }
+
+    /* iframe do mapa */
+    #unidades .unit iframe {
+        width: 80vw;
+        height: 500px;
+        border: 0;
+        border-radius: 1rem;
+    }
+
+    #unidades h3{
+        font-size: 2rem;
+    }
+
+    #unidades p{
+        font-size: 1.3rem;
+    }
+
+    .wa-float {
+        display: none;
+    }
 }

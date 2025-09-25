@@ -13,17 +13,20 @@
             <div class="container navbar-container">
                 <a href="index.html" class="logo">Schmitz Seguridad Electrónica</a>
             </div>
+            <div class="lang-switch">
+                    <button id="lang-btn" onclick="trocarIdioma('es')">🇪🇸 ES</button>
+                </div>
         </nav>
 
 
         <!-- Servicios -->
-        <section id="servicios" class="container" >
+        <section class="container" >
             <h2>Servicios</h2>
-            <div style="margin-top: 150px;">
+            <div style="margin-top: 150px; text-align: center;">
                 <h2 class="title">Protegemos lo que más importa — <strong>Seguridad 360°</strong> para hogares, empresas y grandes proyectos.</h2>
                 <p>Soluciones completas: cámaras HD, monitoreo humano 24/7, conectividad para hoteles (Starlink + SI Net), seguridad para grandes fazendas y mucho más.</p>
             </div>
-            <div class="grid grid-3" style="margin-top:1rem;color:black;">
+            <div id="servicios" class="grid" style="margin:1rem;color:black; padding:5% 10%;">
                 <article class="card" >
                     <div class="card-text">
                         <h3> Cámaras de Seguridad HD</h3>
@@ -42,7 +45,7 @@
                 </article>
                 <article class="card">
                     <div class="card-text">
-                        <h3> Seguridad para Hoteles (Starlink + SI Net)</h3>
+                        <h3> Seguridad para Hoteles</h3>
                     </div>
                     <div class="card-img">
                         <img src="img/assets/blk.jpeg" alt="" class="card-bg">
@@ -74,7 +77,6 @@
                     </div>
                     
                 </article>
-            <div style="margin-top: 10px;"></div>
             </div>
         </section>
 
@@ -166,7 +168,7 @@
         }
     </script>
 
-
+    <script src="translations/translator.js"></script>
     <script src="js/script.js"></script>
     <script src="js/main.js"></script>
     <script src="js/carrusel.js"></script>
