@@ -840,7 +840,7 @@ footer .btn:focus {
 
 @media (max-width: 1300px) {
     p{
-        font-size: 1.3rem;
+        font-size: 1.5rem;
     }
     .navbar {
         font-size: 1rem;
@@ -936,9 +936,9 @@ footer .btn:focus {
         height: 10%;
     }
 
-    #sobre p {
+    /* #sobre p {
         font-size: 1rem;
-    }
+    } */
 
     #testimonials .grid {
         display: flex;
@@ -963,7 +963,7 @@ footer .btn:focus {
     }
 
     #testimonials p{
-        font-size: 1rem;
+        /* font-size: 1rem; */
         padding: 1%;
     }
     
@@ -1002,9 +1002,9 @@ footer .btn:focus {
         font-size: 2rem;
     }
 
-    #unidades p{
+    /* #unidades p{
         font-size: 1.3rem;
-    }
+    } */
 
     #faq h2 {
         font-size: 2.5rem;
@@ -1014,9 +1014,9 @@ footer .btn:focus {
         font-size: 1.2rem;
     }
 
-    #faq p {
-        font-size: 0.8rem;
-    }
+    /* #faq p {
+        font-size: 1.5rem;
+    } */
 
     footer {
         justify-content: center;
@@ -1035,9 +1035,9 @@ footer .btn:focus {
         font-size: 1.5rem;
     }
 
-    .footer-col p{
-        font-size: 1rem;
-    }
+    /* .footer-col p{
+        font-size: 1.5rem;
+    } */
 
     .footer-cols {
         margin: 0;
@@ -1052,7 +1052,7 @@ footer .btn:focus {
 }
 @media (max-width: 800px){
     p{
-        font-size: 1.3rem;
+        font-size: 1.5rem;
     }
 
     .nav-links {
