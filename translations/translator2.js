@@ -28,7 +28,19 @@ const traducoes = {
         "trad.red1":"Conéctate con nosotros en nuestras redes sociales",
         "trad.foo1":"Contáctanos",
         "trad.foo2":"&copy; 2025 Schmitz Seguridad Electrónica. Todos los derechos reservados.",
+
+        "trad.tex":"Automatización residencial",
+        "trad.tex1": "La automatización de ambientes ya es una nueva realidad en el mercado debido a su gran oferta de beneficios y comodidades. Ofrece mucha más seguridad, confort y ahorro para tu hogar, oficina o establecimiento, convirtiéndolos en lugares innovadores. ¡Estamos ansiosos por participar de este momento contigo!",
+        "trad.tex2":"Control de luces",
+        "trad.tex3":"Imagina que no necesitas preocuparte por encender o apagar la iluminación de tu casa. Ahora puedes gestionar estas y otras tareas incluso sentado en el sofá sin tu smartphone, utilizando solo el comando de voz, o bien cuando estés fuera de casa, activando los comandos de forma remota a través de la aplicación. Explora el potencial de tu iluminación y descubre cómo crea el ambiente adecuado para cada situación.",
+        "trad.tex4":"Persianas y portones",
+        "trad.tex5":"Ya no es necesario cerrar el portón o las ventanas cada vez que vayas a dormir o salgas de vacaciones. Utiliza la función “cooperar” en los dispositivos de automatización residencial y comprueba lo conveniente que es cuando todo funciona por sí solo, de manera integrada y simultánea.",
+        "trad.tex6":"Control de aire",
+        "trad.tex7":"Si alguna vez deseaste poder controlar tu aire acondicionado desde tu celular, ahora es totalmente posible. La automatización proporciona las herramientas para controlar la temperatura de tu hogar sin necesidad de tu presencia. Incluso es posible integrar el aire acondicionado a rutinas automáticas que lo activen, como el modo “despertar”, para apagarlo, o el modo “dormir”, para crear el clima adecuado en tu habitación.",
+        "trad.tex8":"Control por voz",
+        "trad.tex9":"Con un comando de voz todo se transforma y se vuelve automático. Los asistentes de voz ofrecen una forma de operar luces, termostatos, cerraduras de puertas y mucho más. Este sistema es, sin duda, una opción de control viable para el hogar y una excelente manera de hacer las cosas más accesibles y fáciles de usar.",
     },
+
     pt: {
         "trad.serv1":"Protegendo o que mais importa — Segurança 360° para fazendas, empresas e grandes projetos.",
         "trad.serv2":"Soluções completas: câmeras HD, monitoramento humano 24/7 conectividade para hotéis, segurança para grandes fazendas e muito mais.",
@@ -58,6 +70,17 @@ const traducoes = {
         "trad.red1":"Conecte-se conosco em nossas redes sociais",
         "trad.foo1":"Contate-nos",
         "trad.foo2":"&copy; 2025 Schmitz Electronic Security. Todos os direitos reservados.",
+
+        "trad.tex": "Automação residencial",
+        "trad.tex1":"A automação de ambientes já é uma nova realidade no mercado devido à sua grande oferta de benefícios e praticidades. Ela oferece muito mais segurança, conforto e economia para a sua casa, escritório ou estabelecimento, e os tornam lugares inovadores. Estamos ansiosos para participar desse momento com você!",
+        "trad.tex2":"Controle de Luzes",
+        "trad.tex3":"Imagine que você não precisa pensar em ligar e desligar a iluminação de sua casa. Agora você pode gerenciar essas e outras tarefas mesmo sentado no sofá sem o seu smartphone, utilizando apenas o comando de voz, ou longe de casa, ativando os comandos remotamente pelo aplicativo. Explore o potencial de sua iluminação e veja como ela cria um clima apropriado para cada as situação.",
+        "trad.tex4":"Persianas e Portões",
+        "trad.tex5":"Não há mais necessidade de fechar o portão ou as janelas todas as vezes quando for dormir ou sair de férias. Utilize a ferramenta “cooperar” nos dispositivos de automação residencial e verifique como é conveniente quando tudo funciona por conta própria, de maneira integrada e simultânea.",
+        "trad.tex6":"Controle de ar",
+        "trad.tex7":"Se alguma vez você desejou poder controlar o seu ar condicionado pelo seu celular, agora é totalmente possível. A automação fornece as ferramentas para controlar a temperatura da sua casa, sem a necessidade da sua presença. É possível ainda integrar o ar condicionado à rotinas automáticas que o acione, como o modo “despertar”, desligando-o, ou o modo “dormir”, ativando o clima adequado para seu quarto.",
+        "trad.tex8":"Controle de voz",
+        "trad.tex9":"Com um comando de voz tudo se transforma e se torna automático. Os assistentes de voz oferecem uma maneira de operar luzes, termostatos, travas de portas e muito mais. Esse sistema é definitivamente uma opção de controle viável para a casa e uma ótima maneira de tornar as coisas mais acessíveis e fáceis de usar.",
     }
 };
 

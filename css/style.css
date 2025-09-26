@@ -15,7 +15,7 @@
 html{
     scroll-behavior:smooth
 }
-    
+
 body{
     margin:0;
     font-family:'Poppins',system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,'Open Sans',sans-serif;
@@ -23,28 +23,38 @@ body{
     color:var(--dark);
     overflow-x: hidden;
 }
-p{
-    font-size: 1.2em;
+
+h2 {
+    font-size: 2.5rem;
 }
+
+h3{
+    font-size: 2rem;
+}
+
+p{
+    font-size: 1.2rem;
+}
+
 a{
     color:inherit;
     text-decoration:none
 }
-    
+
 img{
     max-width:100%;
     display:block
 }
-    
+
 .container{
     max-width:var(--container);
     margin-inline:auto;
     padding:0 1rem
 }
-    
+
 /* Header */
 header{
-    position:relative; 
+    position:relative;
     top:0;
     z-index:50;
     background:rgba(0,0,0,.9);
@@ -52,11 +62,11 @@ header{
     color:var(--white);
     border-bottom:1px solid rgba(255,255,255,.08)
 }
-    
+
 .navbar {
     width: 100%;
     height: 80px;
-    background: var(--dark); 
+    background: var(--dark);
     display: flex;
     align-items: center;
     position: fixed;
@@ -146,7 +156,7 @@ header{
     object-fit: cover;
     z-index: -1;
 }
-    
+
 .hero .wrap{
     display:grid;
     grid-template-columns:1.2fr .8fr;
@@ -219,11 +229,6 @@ section{
     padding:3rem 0
 }
 
-section h2{
-    font-size:clamp(1.4rem,2.5vw,2rem);
-    margin:0 0 1rem
-}
-
 .lead{
     color: var(--dark);
     max-width:70ch
@@ -248,7 +253,6 @@ section h2{
     font-size: 1.2rem;
     font-weight: 600;
     cursor: pointer;
-
     transition: transform 0.3s, box-shadow 0.3s, background 0.3s;
     animation: pulse 1.5s infinite;
 }
@@ -322,8 +326,8 @@ section h2{
 
 .carousel h2{
     text-align: center;
-    font-size: 3em;
-    color: var(--red-dark); 
+    font-size: 3rem;
+    color: var(--red-dark);
 }
 
 .carousel h2::after {
@@ -338,14 +342,7 @@ section h2{
 
 .carousel h3{
     text-align: center;
-    font-size: 1.8em;
-    color: var(--muted); 
-}
-
-.carousel p{
-    text-align: center;
-    font-size: 1em;
-    color: var(--muted); 
+    color: var(--muted);
 }
 
 .carousel-container {
@@ -432,15 +429,11 @@ button:hover {
 
 .card-text {
     flex: 1;
-}
-
-.card-text h3 {
-    font-size: 0.9rem;
     margin-bottom: 8px;
 }
 
 .card-text p {
-    font-size: 0.9rem;
+    font-size: 0.9rem ;
     color: #333;
 }
 
@@ -467,7 +460,6 @@ button:hover {
 }
 
 #sobre h2 {
-    font-size: 5em;
     color: var(--red);
 }
 
@@ -484,7 +476,6 @@ button:hover {
 #sobre p {
     max-width: 700px;
     margin: 0 auto 2rem;
-    font-size: 1.5em;
 }
 
 #sobre .grid {
@@ -504,12 +495,11 @@ button:hover {
 #identidades-seguridad {
     background-color: var(--red-dark);
     color: var(--white);
-    
+
 }
 
 #identidades-seguridad h2 {
     text-align: center;
-    font-size: clamp(1.8rem, 3vw, 2.5rem);
     color: var(--white);
     margin-bottom: 2rem;
     position: relative;
@@ -532,7 +522,6 @@ button:hover {
     align-items: center;
     text-align: center;
     margin: 50px;
-
     max-width: 250px;
 }
 
@@ -541,7 +530,7 @@ button:hover {
 }
 
 .identidad li{
-    font-size: 1.5em;
+    font-size: 1rem;
     list-style: none;
     padding: 10px;
 }
@@ -553,13 +542,12 @@ button:hover {
 }
 
 .identidad h3 {
-    color: var(--white); 
-    font-weight: 600;
+    color: var(--white);
+    /* font-weight: 600; */
 }
 
 /* Testimonials */
 #testimonials h2 {
-    font-size: clamp(1.8rem, 3vw, 2.5rem);
     margin-bottom: 1rem;
     color: var(--red);
     position: relative;
@@ -596,7 +584,6 @@ button:hover {
 }
 
 #unidades h2 {
-    font-size: clamp(1.8rem, 3vw, 2.5rem);
     color: var(--red);
     position: relative;
     display: inline-block;
@@ -606,7 +593,7 @@ button:hover {
 #unidades h2::after {
     content: '';
     display: block;
-    width: 0; 
+    width: 0;
     height: 3px;
     background: var(--red);
     margin: 0.5rem auto 0;
@@ -616,7 +603,7 @@ button:hover {
 
 @keyframes expandLine {
     from { width: 0; }
-    to { width: 50%; } 
+    to { width: 50%; }
 }
 
 #unidades .unit{
@@ -641,23 +628,21 @@ button:hover {
 
 .meta h3 {
     color: var(--red);
-    font-size: 1.25rem;
     font-weight: 600;
     margin-bottom: 0.5rem;
 }
 
-.meta > div {
+.meta  div {
     border-top: 1px solid rgba(255,0,0,0.3);
     padding-top: 0.5rem;
     margin-top: 0.5rem;
 }
 
 .meta p {
-    font-size: 1rem;
     color: var(--dark);
 }
 
-.meta .contact a img { 
+.meta .contact a img {
     display: block;
     width: 40px;
     height: 40px;
@@ -673,7 +658,6 @@ button:hover {
 }
 
 #faq h2 {
-    font-size: 3rem;
     color: var(--red);
     position: relative;
     display: inline-block;
@@ -687,14 +671,6 @@ button:hover {
     background: var(--red);
     margin: 0.5rem auto 0;
     border-radius: 2px;
-}
-
-#faq h3 {
-    font-size: 1.8rem;
-}
-
-#faq p {
-    font-size: 0.9rem;
 }
 
 .faq-card {
@@ -714,37 +690,36 @@ button:hover {
 
 /* Footer */
 footer {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  gap: 2rem;
-  padding: 2rem 1rem;
-  background: var(--dark);
-  color: var(--white);
-  flex-wrap: wrap;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 2rem;
+    padding: 2rem 1rem;
+    background: var(--dark);
+    color: var(--white);
+    flex-wrap: wrap;
 }
 
 footer .col {
-  flex: 1 1 250px;
-  min-width: 220px;
+    flex: 1 1 250px;
+    min-width: 220px;
 }
 
 footer h3 {
-  margin-bottom: 1rem;
-  font-size: 1.2rem;
-  color: var(--red);
+    margin-bottom: 1rem;
+    color: var(--red);
 }
 
 footer a {
-  color: var(--white);
-  text-decoration: none;
-  display: block;
-  margin-bottom: 0.5rem;
-  transition: color 0.3s;
+    color: var(--white);
+    text-decoration: none;
+    display: block;
+    margin-bottom: 0.5rem;
+    transition: color 0.3s;
 }
 
 footer a:hover {
-  color: var(--red);
+    color: var(--red);
 }
 
 .footer-cols {
@@ -773,7 +748,6 @@ footer a:hover {
 
 .footer-col p, .footer-col ul, .footer-col button {
     margin-bottom: 0.75rem;
-    font-size: 0.9rem;
 }
 
 footer .btn {
@@ -842,10 +816,17 @@ footer .btn:focus {
     p{
         font-size: 1.5rem;
     }
+    h2 {
+        font-size: clamp(2.5rem, 5vw, 5em);
+    }
+    h3 {
+        font-size: clamp(2rem, 5vw, 5em);
+    }
+
     .navbar {
         font-size: 1rem;
         padding: 5% 0 ;
-     
+
     }
 
     .nav-links {
@@ -855,12 +836,11 @@ footer .btn:focus {
         top: 0;
         right: 0;
         height: 100vh;
-        width: 0;  
-        transition: width 0.3s ease;       
-        box-sizing: border-box;   
-        
+        width: 0;
+        transition: width 0.3s ease;
+        box-sizing: border-box;
     }
-    
+
     .nav-links {
         overflow: hidden;
     }
@@ -868,7 +848,7 @@ footer .btn:focus {
     .nav-links.show {
         background: rgba(0,0,0,0.95);
         width: 30%;
-        transform: translateX(0); 
+        transform: translateX(0);
     }
 
     .nav-links li {
@@ -884,7 +864,7 @@ footer .btn:focus {
     .menu-toggle {
         padding: 0 2% 0 2% ;
         display: block;
-    } 
+    }
 
     #servicesModal .card{
         padding: auto;
@@ -893,25 +873,16 @@ footer .btn:focus {
         margin: 0 auto
     }
 
-    #identidades-seguridad h2 {
-        font-size: clamp(2.5rem, 5vw, 5em)
-    }
-
-    #identidades-seguridad h3 {
-        font-size: clamp(2rem, 5vw, 5em)
-    }
-
     #identidades-seguridad li {
         font-size: clamp(1rem, 1vw, 1em)
     }
 
     #identidades-seguridad .inner {
-        flex-direction: column;   
+        flex-direction: column;
         align-items: center;
     }
 
     #identidades-seguridad .identidad {
-        font-size: 2rem;
         max-width: 800px;
     }
 
@@ -927,7 +898,6 @@ footer .btn:focus {
         align-items: stretch;
         gap: 1.5rem;
         margin: 20%;
-        font-size: 1.8rem;
     }
 
     #sobre .card {
@@ -936,10 +906,6 @@ footer .btn:focus {
         height: 10%;
     }
 
-    /* #sobre p {
-        font-size: 1rem;
-    } */
-
     #testimonials .grid {
         display: flex;
         flex-wrap: wrap;
@@ -947,7 +913,6 @@ footer .btn:focus {
         align-items: stretch;
         gap: 1.5rem;
         margin: 20%;
-        font-size: 1.8rem;
     }
 
     #testimonials .card {
@@ -958,15 +923,10 @@ footer .btn:focus {
         margin: 0 auto
     }
 
-    #testimonials h2{
-        font-size: clamp(2rem, 5vw, 5em);
-    }
-
     #testimonials p{
-        /* font-size: 1rem; */
         padding: 1%;
     }
-    
+
     #unidades .grid {
         display: flex;
         flex-wrap: wrap;
@@ -974,9 +934,8 @@ footer .btn:focus {
         align-items: stretch;
         gap: 1.5rem;
         margin: 20%;
-        font-size: 1.8rem;
     }
-    
+
     #unidades .unit {
         display: flex;
         flex-direction: column;
@@ -994,35 +953,11 @@ footer .btn:focus {
         border-radius: 1%;
     }
 
-    #unidades h2{
-        font-size: clamp(2rem, 5vw, 5em);
-    }
-
-    #unidades h3{
-        font-size: 2rem;
-    }
-
-    /* #unidades p{
-        font-size: 1.3rem;
-    } */
-
-    #faq h2 {
-        font-size: 2.5rem;
-    }
-
-    #faq h3 {
-        font-size: 1.2rem;
-    }
-
-    /* #faq p {
-        font-size: 1.5rem;
-    } */
-
     footer {
         justify-content: center;
         background: var(--dark);
         color: var(--white);
-        padding: 0;        
+        padding: 0;
     }
 
     footer .grid {
@@ -1030,26 +965,14 @@ footer .btn:focus {
         display: grid;
         gap: 2rem;
     }
-    
-    .footer-col h3{
-        font-size: 1.5rem;
-    }
-
-    /* .footer-col p{
-        font-size: 1.5rem;
-    } */
 
     .footer-cols {
         margin: 0;
         padding: 5% 0 0 10%;
         box-sizing: border-box;
     }
-
-    .legal p{
-        font-size: 0.7rem;
-    }
-
 }
+
 @media (max-width: 800px){
     p{
         font-size: 1.5rem;
@@ -1062,11 +985,11 @@ footer .btn:focus {
         top: 0;
         right: 0;
         height: 100vh;
-        width: 0;  
-        transition: width 0.3s ease;       
-        box-sizing: border-box;   
+        width: 0;
+        transition: width 0.3s ease;
+        box-sizing: border-box;
     }
-    
+
     .nav-links {
         overflow: hidden;
     }
@@ -1074,7 +997,7 @@ footer .btn:focus {
     .nav-links.show {
         background: rgba(0,0,0,0.95);
         width: 40%;
-        transform: translateX(0); 
+        transform: translateX(0);
     }
 
     .nav-links li {
@@ -1089,7 +1012,7 @@ footer .btn:focus {
 
     .menu-toggle {
         display: block;
-    } 
+    }
 
     .container{
         padding: auto;
@@ -1097,7 +1020,7 @@ footer .btn:focus {
 
     .grid{
         display: flex;
-        flex-wrap: wrap;        /* permite quebrar em várias linhas */
+        flex-wrap: wrap;
         gap: 1rem;
     }
 
@@ -1108,7 +1031,7 @@ footer .btn:focus {
     }
 
     #sobre h2 {
-        font-size: clamp(2rem, 5vw, 5em);   
+        font-size: clamp(2rem, 5vw, 5em);
     }
 
     /* iframe do mapa */
