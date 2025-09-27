@@ -69,7 +69,7 @@ header{
     background: var(--dark);
     display: flex;
     align-items: center;
-    position: fixed;
+
     top: 0;
     box-shadow: 0 4px 12px rgba(0,0,0,0.5);
     z-index: 1000;
@@ -120,7 +120,7 @@ header{
 }
 
 .lang-switch button {
-    background: #1e293b;   /* cor escura */
+    background: #1e293b;
     color: #fff;
     border: none;
     padding: 0.5rem 1rem;
@@ -131,7 +131,7 @@ header{
 }
 
 .lang-switch button:hover {
-    background: #334155;   /* cor mais clara no hover */
+    background: #334155;
     transform: scale(1.05);
 }
 
@@ -142,12 +142,6 @@ header{
     overflow: hidden;
     color: var(--light);
 }
-/* .hero .logo {
-    position: absolute;
-    bottom: 70%;
-    right: 90%;
-    z-index: 10;
-} */
 
 .hero-bg {
     position: absolute;
@@ -162,8 +156,9 @@ header{
     grid-template-columns:1.2fr .8fr;
     gap:2rem;
     align-items:center;
-    padding:3.2rem 2rem
+    padding:3.2rem 2rem;
 }
+
 .hero-content {
     position: absolute;
     top: 50%;
@@ -221,7 +216,7 @@ header{
 .hero-content .line1 { animation-delay: 0.3s; }
 .hero-content .line2 { animation-delay: 0.6s; }
 .hero-content .slogan { animation-delay: 0.9s; }
-.hero-content .slogan { animation-delay: 0.12s; }
+.hero-content .slogan2 { animation-delay: 0.12s; }
 
 
 /* Sections */
@@ -495,7 +490,6 @@ button:hover {
 #identidades-seguridad {
     background-color: var(--red-dark);
     color: var(--white);
-
 }
 
 #identidades-seguridad h2 {
@@ -544,7 +538,6 @@ button:hover {
 
 .identidad h3 {
     color: var(--white);
-    /* font-weight: 600; */
 }
 
 /* Testimonials */
@@ -688,7 +681,6 @@ button:hover {
     box-shadow: 0 8px 20px rgba(0,0,0,0.1);
 }
 
-
 /* Footer */
 footer {
     display: flex;
@@ -827,7 +819,6 @@ footer .btn:focus {
     .navbar {
         font-size: 1rem;
         padding: 5% 0 ;
-
     }
 
     .nav-links {
