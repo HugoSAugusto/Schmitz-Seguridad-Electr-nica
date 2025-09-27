@@ -817,10 +817,10 @@ footer .btn:focus {
         font-size: 1.5rem;
     }
     h2 {
-        font-size: clamp(2.5rem, 5vw, 5em);
+        font-size: 3rem;
     }
     h3 {
-        font-size: clamp(2rem, 5vw, 5em);
+        font-size: 2rem;
     }
 
     .navbar {
@@ -874,7 +874,7 @@ footer .btn:focus {
     }
 
     #identidades-seguridad li {
-        font-size: clamp(1rem, 1vw, 1em)
+        font-size: 1.5rem
     }
 
     #identidades-seguridad .inner {
