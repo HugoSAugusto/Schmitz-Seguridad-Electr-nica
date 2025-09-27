@@ -9,11 +9,12 @@
 }
 
 *{
-    box-sizing:border-box
+    box-sizing:border-box;
 }
 
 html{
-    scroll-behavior:smooth
+    scroll-behavior:smooth;
+    overflow-x: hidden;
 }
 
 body{
@@ -490,6 +491,7 @@ button:hover {
 #identidades-seguridad {
     background-color: var(--red-dark);
     color: var(--white);
+    overflow-x: hidden;
 }
 
 #identidades-seguridad h2 {
@@ -515,8 +517,8 @@ button:hover {
     flex-direction: column;
     align-items: center;
     text-align: center;
-    margin: 50px;
-    width: 100%;
+    margin: 25px;
+    width: calc(100% - 50px);
     max-width: 250px;
 }
 
@@ -527,7 +529,7 @@ button:hover {
 .identidad li{
     font-size: 1rem;
     list-style: none;
-    padding: 10px 0;
+    /* padding: 10px 0; */
 }
 
 .identidad img {
@@ -807,13 +809,13 @@ footer .btn:focus {
 
 @media (max-width: 1300px) {
     p{
-        font-size: 1.5rem;
+        font-size: 1rem;
     }
     h2 {
         font-size: 3.5rem;
     }
     h3 {
-        font-size: 2.5rem;
+        font-size: 2rem;
     }
 
     .navbar {
@@ -966,10 +968,6 @@ footer .btn:focus {
 }
 
 @media (max-width: 800px){
-    p{
-        font-size: 1.5rem;
-    }
-
     .nav-links {
         display: flex;
         flex-direction: column;
@@ -993,12 +991,12 @@ footer .btn:focus {
     }
 
     .nav-links li {
-        margin: 1.5rem 0;
+        /* margin: 1.5rem 0; */
         text-align: center;
     }
 
     .nav-links li a {
-        font-size: 1.5rem;
+        /* font-size: 1.5rem; */
         color: var(--white);
     }
 
@@ -1017,13 +1015,8 @@ footer .btn:focus {
     }
 
     .grid .card {
-
         flex: 1 1 150px;
         max-width: 100%;
-    }
-
-    #sobre h2 {
-        font-size: clamp(2rem, 5vw, 5em);
     }
 
     /* iframe do mapa */
@@ -1032,14 +1025,6 @@ footer .btn:focus {
         height: 500px;
         border: 0;
         border-radius: 1rem;
-    }
-
-    #unidades h3{
-        font-size: 2rem;
-    }
-
-    #unidades p{
-        font-size: 1.3rem;
     }
 
     .wa-float {
