@@ -434,9 +434,9 @@ button:hover {
 }
 
 .card-img img {
-    width: 70px;
+    width: 60px;
     height: auto;
-    margin-left: 15px;
+    
 }
 
 .card:hover {
@@ -829,11 +829,23 @@ footer .btn:focus {
   flex-direction: row-reverse;
 }
 
-.img-block img {
-  /* max-width: 250px; */
+/* .img-block img {
   height: auto;
   display: block;
+} */
+
+.img-block img {
+  border-radius: 12px;
+  border: 2px solid var(--muted); /* cor rosa, pode trocar */
+  box-shadow: 0 0 15px var(--red-dark);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
+
+.img-block img:hover {
+  transform: scale(1.05) rotate(1deg);
+  box-shadow: 0 0 25px var(--red);
+}
+
 
 @media (max-width: 1300px) {
     p{
@@ -995,6 +1007,11 @@ footer .btn:focus {
     }
 
     .art {
+        text-align: center;
+        align-items: center;
+    }
+
+    .art img {
         text-align: center;
         align-items: center;
     }
