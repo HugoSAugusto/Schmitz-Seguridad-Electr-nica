@@ -699,8 +699,11 @@ footer .col {
     flex: 1 1 250px;
     min-width: 220px;
 }
-
+footer p{
+    font-size: 0.8rem;
+}
 footer h3 {
+    font-size: 1.2rem;
     margin-bottom: 1rem;
     color: var(--red);
 }
@@ -805,6 +808,31 @@ footer .btn:focus {
 
 .wa-float a img:hover {
     transform: scale(1.2);
+}
+
+.art {
+  display: flex;
+  align-items: flex-start; 
+  gap: 20px; 
+  padding: 30px 0;
+}
+
+.art > div:first-child {
+  flex: 1; 
+}
+
+.text-block {
+  flex: 1; 
+}
+
+.art.invert {
+  flex-direction: row-reverse;
+}
+
+.img-block img {
+  /* max-width: 250px; */
+  height: auto;
+  display: block;
 }
 
 @media (max-width: 1300px) {
@@ -964,6 +992,19 @@ footer .btn:focus {
         margin: 0;
         padding: 5% 0 0 10%;
         box-sizing: border-box;
+    }
+
+    .art {
+        text-align: center;
+        align-items: center;
+    }
+
+    .art.invert {
+        flex-direction: column;
+    }
+
+    .art {
+        flex-direction: column;
     }
 }
 
