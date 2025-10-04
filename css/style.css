@@ -994,11 +994,11 @@ footer .btn:focus {
         padding: 0;
     }
 
-    footer .grid {
+    /* footer .grid {
         grid-template-columns: 1fr;
         display: grid;
         gap: 2rem;
-    }
+    } */
 
     .footer-cols {
         margin: 0;
@@ -1016,6 +1016,9 @@ footer .btn:focus {
         align-items: center;
     }
 
+    .art h3 {
+        font-size: 2rem;
+    }
     .art.invert {
         flex-direction: column;
     }
