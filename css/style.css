@@ -348,12 +348,12 @@ section{
 }
 
 .carousel-item {
-    min-width: 50%;
-    margin: 30px 10px;
+    min-width: 70%;
+    min-height: 70%;
+    
     box-sizing: border-box;
     border-radius: 16px;
     overflow: hidden;
-    background: var(--black);
     box-shadow: 0 6px 18px rgba(0,0,0,0.4);
 }
 
@@ -998,12 +998,6 @@ footer .btn:focus {
         padding: 0;
     }
 
-    /* footer .grid {
-        grid-template-columns: 1fr;
-        display: grid;
-        gap: 2rem;
-    } */
-
     .footer-cols {
         margin: 0;
         padding: 5% 0 0 10%;
@@ -1030,64 +1024,16 @@ footer .btn:focus {
 }
 
 @media (max-width: 500px){
-    .nav-links {
-        display: flex;
-        flex-direction: column;
-        position: fixed;
-        top: 0;
-        right: 0;
-        height: 100vh;
-        width: 0;
-        transition: width 0.3s ease;
-        box-sizing: border-box;
+    .carousel {
+        background-color: #000000c4;
+        width:100%;
+        height: 750px;
     }
 
-    .nav-links {
-        overflow: hidden;
-    }
-
-    .nav-links.show {
-        background: rgba(0,0,0,0.95);
-        width: 40%;
-        transform: translateX(0);
-    }
-
-    .nav-links li {
-        /* margin: 1.5rem 0; */
-        text-align: center;
-    }
-
-    .nav-links li a {
-        /* font-size: 1.5rem; */
-        color: var(--white);
-    }
-
-    .menu-toggle {
-        display: block;
-    }
-
-    .container{
-        padding: auto;
-    }
-
-    .grid{
-        display: flex;
-        flex-wrap: wrap;
-        gap: 1rem;
-    }
-
-    .grid .card {
-        flex: 1 1 150px;
-        max-width: 100%;
-    }
-
-    /* iframe do mapa */
-    #unidades .unit iframe {
-        width: 80vw;
-        height: 500px;
-        border: 0;
-        border-radius: 1rem;
-    }
+    .carousel-item {
+    min-width: 70%;
+    height: 90%;
+}
 
     .wa-float {
         display: none;
