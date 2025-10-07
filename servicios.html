@@ -4,6 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Servicios | Schmitz Seguridad Electrónica</title>
+    <meta name="description" content="Seguridad electrónica en Paraguay: cámaras HD, monitoreo humano 24/7, seguridad para hoteles con Starlink + SI Net, grandes fazendas, alarmas y redes." />
+    <meta name="author" content="Schmitz Seguridad Electrónica" />
+    <meta property="og:title" content="Schmitz Seguridad Electrónica" />
+    <meta property="og:description" content="Protegemos lo que más importa – Seguridad 360° para hogares, empresas y grandes proyectos." />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="es_PY" />
+    <meta property="og:url" content="https://www.sse.com.py" />
+    <meta property="og:image" content="/logo-schmitz.jpg" />
+    <link rel="canonical" href="https://www.sse.com.py" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="icon" href="img/Logo-Schmitz-Seguridad-originalSem-fundo.png"/>
     <link rel="stylesheet" href="css/style.css">
     
@@ -21,7 +33,7 @@
 
         <!-- Servicios -->
         <section class="container" >
-            <h2>Servicios</h2>
+            <h2 data-translate="trad1">Servicios</h2>
             <div style=" text-align: center;">
                 <h2 class="title" data-translate="trad.serv1">Protegemos lo que más importa — <strong>Seguridad 360°</strong> para hogares, empresas y grandes proyectos.</h2>
                 <p data-translate="trad.serv2">Soluciones completas: cámaras HD, monitoreo humano 24/7, conectividad para hoteles, seguridad para grandes fazendas y mucho más.</p>
@@ -234,6 +246,11 @@
                 modal.style.display = "none";
             }
         }
+
+        // Limpa qualquer caminho e hash da URL
+        window.addEventListener('load', () => {
+            history.replaceState(null, '', '/');
+        });
     </script>
 
     <script src="translations/translator2.js"></script>

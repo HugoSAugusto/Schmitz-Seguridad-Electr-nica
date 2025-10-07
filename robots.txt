@@ -1,3 +1,5 @@
 User-agent: *
-    Allow: /
-    Sitemap: https://www.   .com/sitemap.xml
+Allow: /
+
+# Localização do sitemap
+Sitemap: https://www.sse.com.py/sitemap.xml

@@ -10,12 +10,12 @@
     <meta property="og:description" content="Protegemos lo que más importa – Seguridad 360° para hogares, empresas y grandes proyectos." />
     <meta property="og:type" content="website" />
     <meta property="og:locale" content="es_PY" />
-    <meta property="og:url" content="https://www.schmitz.com/" />
+    <meta property="og:url" content="https://www.sse.com.py" />
     <meta property="og:image" content="/logo-schmitz.jpg" />
-    <link rel="canonical" href="https://www.schmitz.com/" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="canonical" href="https://www.sse.com.py" />
+    <link rel="preload" rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preload" rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="icon" href="img/Logo-Schmitz-Seguridad-originalSem-fundo.png"/>
     <link rel="stylesheet" href="css/style.css">
 </head>
@@ -23,12 +23,12 @@
     <header>
         <nav class="navbar">
             <div class="container navbar-container">
-                <a href="index.html" class="logo">Schmitz Seguridad Electrónica</a>
+                <a href="index.html" class="logo" onclick="event.preventDefault(); window.scrollTo({top:0, behavior:'smooth'});">Schmitz Seguridad Electrónica</a>
                 <div class="menu-toggle" id="menu-toggle">&#9776;</div>
                     <ul class="nav-links" id="nav-links">
-                    <li><a href="#home" data-translate="nav.home">Inicio</a></li>
+                    <li><a href="#home" onclick="event.preventDefault()" data-translate="nav.home">Inicio</a></li>
                     <li><a href="servicios.html" data-translate="nav.services">Servicios</a></li>
-                    <li><a href="#unidades">Unidades</a></li>
+                    <li><a href="#" class="scroll-link" data-target="unidades">Unidades</a></li>
                 </ul>
                 <div class="lang-switch">
                     <button id="lang-btn" onclick="trocarIdioma('es')">🇪🇸 ES</button>
@@ -395,44 +395,81 @@
         </a>
     </div>
 
- 
-
     <script>
         const menuToggle = document.getElementById('menu-toggle');
-        const navLinks = document.getElementById('nav-links');
+const navLinks = document.getElementById('nav-links');
 
-        menuToggle.addEventListener('click', () => {
-            navLinks.classList.toggle('show');
-        });
+// Toggle do menu
+menuToggle.addEventListener('click', (e) => {
+    e.stopPropagation();
+    navLinks.classList.toggle('show');
+});
 
-        // Fecha menu ao clicar em um item
-        navLinks.querySelectorAll('a').forEach(link => {
-            link.addEventListener('click', () => navLinks.classList.remove('show'));
-        });;
+// Fecha menu ao clicar em um item
+navLinks.querySelectorAll('a').forEach(link => {
+    link.addEventListener('click', () => navLinks.classList.remove('show'));
+});
 
-        const modal = document.getElementById("servicesModal");
-        const openModal = document.getElementById("openModal");
-        const closeModal = document.querySelector(".close");
+// Fecha menu ao clicar fora
+window.addEventListener('click', (e) => {
+    if (navLinks.classList.contains('show') && 
+        !navLinks.contains(e.target) && 
+        e.target !== menuToggle) {
+        navLinks.classList.remove('show');
+    }
+});
 
-        openModal.onclick = () => modal.style.display = "flex";
-        closeModal.onclick = () => modal.style.display = "none";
-        window.onclick = e => { 
-            if (e.target === modal) modal.style.display = "none";
-         }
+// Modal de serviços
+const modal = document.getElementById("servicesModal");
+const openModal = document.getElementById("openModal");
+const closeModal = document.querySelector(".close");
 
-         function openServicesModal() {
-            document.getElementById('servicesModal').style.display = 'flex';
+openModal.onclick = () => modal.style.display = "flex";
+closeModal.onclick = () => modal.style.display = "none";
+
+window.addEventListener('click', e => {
+    if (e.target === modal) modal.style.display = "none";
+});
+
+function openServicesModal() {
+    modal.style.display = 'flex';
+}
+
+function closeServicesModal() {
+    modal.style.display = 'none';
+}
+
+// Limpa URL para mostrar apenas o domínio ou nome da página sem .html
+window.addEventListener('load', () => {
+    const path = window.location.pathname;
+    if (path.endsWith('index.html') || path === '/') {
+        history.replaceState(null, '', '/'); // home
+    } else if (path.endsWith('.html')) {
+        const cleanPath = path.replace('.html', '');
+        history.replaceState(null, '', cleanPath); // outras páginas
+    }
+});
+
+// Rolagem suave para seções internas sem # na URL
+document.querySelectorAll('.scroll-link').forEach(link => {
+    link.addEventListener('click', e => {
+        e.preventDefault(); // previne hash
+        const targetId = link.getAttribute('data-target');
+        const targetElement = document.getElementById(targetId);
+        if (targetElement) {
+            targetElement.scrollIntoView({ behavior: 'smooth' });
         }
+    });
+});
 
-        function closeServicesModal() {
-            document.getElementById('servicesModal').style.display = 'none';
-        }
-
-        window.onclick = function(event) {
-            if (event.target == document.getElementById('servicesModal')) {
-            closeServicesModal();
-            }
-        }
+// Logo rola para o topo sem alterar URL se já estiver na home
+const logo = document.querySelector('.logo');
+logo.addEventListener('click', e => {
+    if (window.location.pathname === '/' || window.location.pathname.endsWith('index.html')) {
+        e.preventDefault();
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+});
 
     </script>
 

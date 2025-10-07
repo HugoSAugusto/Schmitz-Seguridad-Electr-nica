@@ -880,7 +880,7 @@ footer .btn:focus {
     }
 
     .nav-links.show {
-        background: rgba(0,0,0,0.95);
+        background: rgba(0, 0, 0, 0.95);
         width: 30%;
         transform: translateX(0);
     }

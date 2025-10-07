@@ -1,5 +1,6 @@
 const traducoes = {
-    es: {        
+    es: {
+        "trad1":"Servicios",
         "trad.serv1":"Protegemos lo que más importa — Seguridad 360° para hogares, empresas y grandes proyectos.",
         "trad.serv2":"Soluciones completas: cámaras HD, monitoreo humano 24/7, conectividad para hoteles, seguridad para grandes fazendas y mucho más.",
         "trad.serv3":"Cámaras de Seguridad HD",
@@ -42,6 +43,7 @@ const traducoes = {
     },
 
     pt: {
+        "trad1":"Serviços",
         "trad.serv1":"Protegendo o que mais importa — Segurança 360° para fazendas, empresas e grandes projetos.",
         "trad.serv2":"Soluções completas: câmeras HD, monitoramento humano 24/7 conectividade para hotéis, segurança para grandes fazendas e muito mais.",
         "trad.serv3":"Câmeras de segurança HD",
