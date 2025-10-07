@@ -312,10 +312,11 @@ section{
 .carousel {
     position: relative;
     width: 90%;
-    height: 750px;
-    margin: 50px auto;
+    height: 850px;
+    margin: 30px auto;
+    padding: 0 10px;
     overflow: hidden;
-    border-radius: 20px;
+    border-radius: 10px;
     background: var(--black);
     box-shadow: 0 8px 24px rgba(0,0,0,0.5);
 }
@@ -348,9 +349,9 @@ section{
 }
 
 .carousel-item {
-    min-width: 70%;
-    min-height: 70%;
-    
+    min-width: 50%;
+    height: 950px;
+    margin: 10px 0px;
     box-sizing: border-box;
     border-radius: 16px;
     overflow: hidden;
@@ -359,11 +360,11 @@ section{
 
 .carousel-item img {
     width: 95%;
-    height: 70%;
+    height: 63%;
     object-fit: cover;
     display: block;
     border-radius: 16px;
-    transition: transform 0.4s ease;
+    transition: transform 0.2s ease;
 }
 
 .carousel-item img:hover {
@@ -1030,10 +1031,14 @@ footer .btn:focus {
         height: 750px;
     }
 
+    .carousel h3{
+        display: none;
+    }
+
     .carousel-item {
-    min-width: 70%;
-    height: 90%;
-}
+        background: none;
+        min-width: 80%;
+    }
 
     .wa-float {
         display: none;
