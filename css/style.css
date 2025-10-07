@@ -830,14 +830,9 @@ footer .btn:focus {
   flex-direction: row-reverse;
 }
 
-/* .img-block img {
-  height: auto;
-  display: block;
-} */
-
 .img-block img {
   border-radius: 12px;
-  border: 2px solid var(--muted); /* cor rosa, pode trocar */
+  border: 2px solid var(--muted); 
   box-shadow: 0 0 15px var(--red-dark);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
@@ -1001,7 +996,7 @@ footer .btn:focus {
 
     .footer-cols {
         margin: 0;
-        padding: 5% 0 0 10%;
+        padding: 5%;
         box-sizing: border-box;
     }
 
