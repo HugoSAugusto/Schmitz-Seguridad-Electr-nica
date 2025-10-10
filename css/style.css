@@ -542,7 +542,10 @@ button:hover {
     box-shadow: inset 0 0 15px rgba(255, 255, 255, 0.2),
                 0 6px 25px rgba(0, 0, 0, 0.6);
 }
-
+.identidad ul{
+    padding-right: 10%;
+    justify-items: center;
+}
 .identidad li{
     font-size: 1rem;
     list-style: none;
